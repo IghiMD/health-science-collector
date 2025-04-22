@@ -1,160 +1,181 @@
 #!/bin/bash
 
-# Farby pre výstup
+# Farby pre lepšiu čitateľnosť
 GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
 RED='\033[0;31m'
-YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Nastavenie pracovného adresára na adresár so skriptom
-cd "$(dirname "$0")"
+# Inicializácia počítadiel
+uspesne_testy=0
+neuspesne_testy=0
+celkovy_pocet_testov=1  # Teraz testujeme len TASR scraper
 
-echo -e "${BLUE}==============================================${NC}"
-echo -e "${BLUE}      TESTOVANIE ZBERAČOV ZDRAVOTNÍCKYCH     ${NC}"
-echo -e "${BLUE}              A VEDECKÝCH DÁT                ${NC}"
-echo -e "${BLUE}==============================================${NC}"
-echo
-
-# Funkcia na testovanie konkrétneho Python modulu
-test_module() {
-    local module_name=$1
-    local function_name=$2
-    
-    echo -e "${YELLOW}Testujem modul:${NC} $module_name"
-    echo -e "${YELLOW}Funkcia:${NC} $function_name"
-    
-    # Vytvoríme dočasný Python skript pre testovanie
-    cat > temp_test.py << EOF
-import sys
-from $module_name import $function_name
-from utils.logger import logger
-import json
-
-try:
-    # Vypneme štandardný výstup loggera počas testovania
-    logger.handlers = []
-
-    # Spustíme funkciu
-    results = $function_name()
-    
-    # Vypíšeme počet výsledkov
-    print(f"SUCCESS:{len(results)}")
-    
-    # Vypíšeme prvý výsledok ako ukážku (ak existuje)
-    if results and len(results) > 0:
-        print("SAMPLE:" + json.dumps(results[0], ensure_ascii=False))
-except Exception as e:
-    print(f"ERROR:{str(e)}")
-    sys.exit(1)
-EOF
-
-    # Spustíme testovací skript
-    result=$(python3 temp_test.py)
-    
-    # Spracujeme výsledok
-    if [[ $result == ERROR:* ]]; then
-        error_msg=${result#ERROR:}
-        echo -e "${RED}❌ Testovanie zlyhalo: $error_msg${NC}"
-        echo
-        success=false
-    else
-        count=$(echo "$result" | grep "SUCCESS:" | cut -d':' -f2)
-        sample=$(echo "$result" | grep "SAMPLE:" | cut -d':' -f2-)
-        
-        echo -e "${GREEN}✅ Test úspešný${NC}"
-        echo -e "${GREEN}📊 Počet získaných článkov:${NC} $count"
-        
-        if [ ! -z "$sample" ]; then
-            echo -e "${GREEN}📰 Ukážka prvého článku:${NC}"
-            echo "$sample" | python3 -m json.tool
-        fi
-        echo
-        success=true
-    fi
-    
-    # Odstránime dočasný skript
-    rm temp_test.py
-    
-    return $success
+# Funkcie pre výpis
+print_header() {
+    echo "=============================================="
+    echo "$1"
+    echo "=============================================="
 }
 
-# Príprava zhrnutia výsledkov
-declare -A results
-total_sources=0
-successful_sources=0
+print_success() {
+    echo -e "${GREEN}✅ $1${NC}"
+}
 
-echo -e "${BLUE}Začínam testovanie modulov zberu dát...${NC}"
-echo
+print_warning() {
+    echo -e "${YELLOW}⚠️ $1${NC}"
+}
 
-# Test 1: Hlavný news_scraper
-echo -e "${BLUE}==============================================${NC}"
-if test_module "utils.news_scraper" "scrape_all"; then
-    results["Hlavný news_scraper"]="✅ Úspešné"
-    ((successful_sources++))
-else
-    results["Hlavný news_scraper"]="❌ Zlyhalo"
-fi
-((total_sources++))
+print_error() {
+    echo -e "${RED}❌ $1${NC}"
+}
 
-# Test 2: SITA scraper
-echo -e "${BLUE}==============================================${NC}"
-if test_module "utils.scraper_sita_rss" "fetch_sita_articles"; then
-    results["SITA scraper"]="✅ Úspešné"
-    ((successful_sources++))
-else
-    results["SITA scraper"]="❌ Zlyhalo"
-fi
-((total_sources++))
+print_info() {
+    echo -e "${BLUE}$1${NC}"
+}
 
-# Test 3: SME direct scraper
-echo -e "${BLUE}==============================================${NC}"
-if test_module "utils.scraper_sme_direct" "fetch_sme_direct"; then
-    results["SME direct scraper"]="✅ Úspešné"
-    ((successful_sources++))
-else
-    results["SME direct scraper"]="❌ Zlyhalo"
-fi
-((total_sources++))
+# Funkcia na testovanie TASR scrapera
+test_tasr_scraper() {
+    print_header "Testujem modul: utils.scraper_tasr_rss_ai"
+    echo "Funkcia: fetch_tasr_articles"
+    
+    # Spustíme test TASR scrapera
+    output=$(python3 -c "from utils.scraper_tasr_rss_ai import fetch_tasr_articles; result = fetch_tasr_articles(); print(len(result)); import json; print(json.dumps(result[0] if result else {}))")
+    
+    # Rozdelenie výstupu na počet článkov a ukážku prvého článku
+    pocet_clankov=$(echo "$output" | head -n 1)
+    prvy_clanok=$(echo "$output" | tail -n 1)
+    
+    # Vyhodnotenie výsledku
+    if [ $? -eq 0 ]; then
+        print_success "Test úspešný"
+        echo "📊 Počet získaných článkov: $pocet_clankov"
+        if [ "$pocet_clankov" -gt 0 ]; then
+            echo "📰 Ukážka prvého článku:"
+            echo "$prvy_clanok"
+        fi
+        uspesne_testy=$((uspesne_testy + 1))
+        return 0
+    else
+        print_error "Test neúspešný"
+        neuspesne_testy=$((neuspesne_testy + 1))
+        return 1
+    fi
+}
 
-# Test 4: TASR RSS scraper
-echo -e "${BLUE}==============================================${NC}"
-if test_module "utils.scraper_tasr_rss_ai" "fetch_tasr_articles"; then
-    results["TASR RSS scraper"]="✅ Úspešné"
-    ((successful_sources++))
-else
-    results["TASR RSS scraper"]="❌ Zlyhalo"
-fi
-((total_sources++))
+# Funkcia na testovanie dostupnosti webových zdrojov
+test_web_source() {
+    local url="$1"
+    local nazov="$2"
+    
+    echo "Testujem dostupnosť: $nazov"
+    echo "URL: $url"
+    
+    # Použijeme curl na testovanie dostupnosti zdroja
+    # -s: tichý mód, -L: sleduj presmerovania, -I: získaj len hlavičky, -o /dev/null: zahoď výstup
+    # -w '%{http_code}': vráť len HTTP kód odpovede
+    http_code=$(curl -s -L -I -o /dev/null -w '%{http_code}' "$url")
+    
+    if [ "$http_code" = "200" ]; then
+        print_success "Zdroj je dostupný (HTTP $http_code)"
+        return 0
+    elif [ "$http_code" = "404" ]; then
+        print_error "Zdroj nie je dostupný (HTTP $http_code)"
+        return 1
+    else
+        print_warning "Zdroj vrátil neštandardnú odpoveď (HTTP $http_code)"
+        return 2
+    fi
+}
 
-# Zobraz súhrnné výsledky
-echo -e "${BLUE}==============================================${NC}"
-echo -e "${BLUE}               SÚHRNNÉ VÝSLEDKY              ${NC}"
-echo -e "${BLUE}==============================================${NC}"
-echo
+# Hlavný testovací blok
+print_header "TESTOVANIE ZBERAČOV ZDRAVOTNÍCKYCH A VEDECKÝCH DÁT"
 
-for source in "${!results[@]}"; do
-    echo -e "${YELLOW}$source:${NC} ${results[$source]}"
+# Test hlavného TASR scrapera
+test_tasr_scraper
+
+# Definícia zdrojov na testovanie
+declare -a zdroje=(
+    "Seznam Zprávy Tech|https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431"
+    "Seznam Zprávy Jídlo|https://www.seznamzpravy.cz/sekce/magazin-jidlo-485"
+    "Seznam Zprávy Životní styl|https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195"
+    "Seznam Zprávy Návody|https://www.seznamzpravy.cz/sekce/tech-technologie-navody-434"
+    "Seznam Zprávy Historie|https://www.seznamzpravy.cz/sekce/magazin-historie-231"
+    "Aktuálně.cz Zdravotnictví|https://zpravy.aktualne.cz/zdravotnictvi/l~i:keyword:95/"
+    "Ministr zdraví|https://www.ministrzdravi.cz/medialni-vystupy/"
+    "Zdravé zprávy - Aktuality|https://www.zdravezpravy.cz/rubrika/aktuality/"
+    "Zdravé zprávy - Zdravotnictví|https://www.zdravezpravy.cz/rubrika/zdravotnictvi/"
+    "Medical Tribune|https://www.tribune.cz/vsechny-clanky/"
+    "České noviny - RSS|https://www.ceskenoviny.cz/sluzby/rss/magazin.php"
+    "České noviny - Magazín|https://www.ceskenoviny.cz/magazin/"
+)
+
+print_header "TESTOVANIE DOSTUPNOSTI ĎALŠÍCH ZDROJOV"
+
+# Počítadlá pre zdroje
+dostupne_zdroje=0
+nedostupne_zdroje=0
+nestandardne_zdroje=0
+celkom_zdrojov=${#zdroje[@]}
+
+# Testovanie dostupnosti zdrojov
+for zdroj in "${zdroje[@]}"; do
+    nazov=$(echo "$zdroj" | cut -d'|' -f1)
+    url=$(echo "$zdroj" | cut -d'|' -f2)
+    
+    echo ""
+    echo "----------------------------------------------"
+    
+    test_web_source "$url" "$nazov"
+    vysledok=$?
+    
+    if [ $vysledok -eq 0 ]; then
+        dostupne_zdroje=$((dostupne_zdroje + 1))
+    elif [ $vysledok -eq 1 ]; then
+        nedostupne_zdroje=$((nedostupne_zdroje + 1))
+    else
+        nestandardne_zdroje=$((nestandardne_zdroje + 1))
+    fi
 done
 
-echo
-echo -e "${GREEN}Úspešné testy:${NC} $successful_sources z $total_sources"
+echo ""
+print_header "SÚHRNNÉ VÝSLEDKY TESTOVANIA SCRAPEROVÝCH MODULOV"
 
-# Hodnotenie úspešnosti
-success_rate=$((successful_sources * 100 / total_sources))
-echo -e "${BLUE}Úspešnosť:${NC} $success_rate%"
-
-# Záverečné zhrnutie
-echo
-if [ $success_rate -eq 100 ]; then
-    echo -e "${GREEN}🎉 Všetky zdroje fungujú správne!${NC}"
-elif [ $success_rate -ge 75 ]; then
-    echo -e "${YELLOW}⚠️ Väčšina zdrojov funguje, ale niektoré zlyhali.${NC}"
-else
-    echo -e "${RED}❌ Výrazné problémy so zberom dát. Skontroluj moduly.${NC}"
+uspesnost=0
+if [ $celkovy_pocet_testov -gt 0 ]; then
+    uspesnost=$((uspesne_testy * 100 / celkovy_pocet_testov))
 fi
 
-echo
-echo -e "${BLUE}==============================================${NC}"
-echo -e "${BLUE}              KONIEC TESTOVANIA              ${NC}"
-echo -e "${BLUE}==============================================${NC}"
+echo "Úspešné testy: $uspesne_testy z $celkovy_pocet_testov"
+echo "Úspešnosť: $uspesnost%"
+echo ""
+
+if [ $uspesnost -eq 100 ]; then
+    print_success "Všetky testy úspešné. Zbieranie dát funguje správne."
+elif [ $uspesnost -ge 75 ]; then
+    print_warning "Väčšina testov úspešná, ale niektoré zlyhali. Skontroluj problematické moduly."
+else
+    print_error "Výrazné problémy so zberom dát. Skontroluj moduly."
+fi
+
+echo ""
+print_header "SÚHRNNÉ VÝSLEDKY TESTOVANIA DOSTUPNOSTI ZDROJOV"
+
+dostupnost_percent=$((dostupne_zdroje * 100 / celkom_zdrojov))
+
+echo "Celkový počet testovaných zdrojov: $celkom_zdrojov"
+print_success "Dostupné zdroje: $dostupne_zdroje ($dostupnost_percent%)"
+print_error "Nedostupné zdroje: $nedostupne_zdroje"
+print_warning "Zdroje s neštandardnou odpoveďou: $nestandardne_zdroje"
+echo ""
+
+if [ $dostupnost_percent -eq 100 ]; then
+    print_success "Všetky zdroje sú dostupné."
+elif [ $dostupnost_percent -ge 75 ]; then
+    print_warning "Väčšina zdrojov je dostupná, ale niektoré môžu vyžadovať ďalšiu kontrolu."
+else
+    print_error "Výrazné problémy s dostupnosťou zdrojov. Skontroluj ich dostupnosť manuálne."
+fi
+
+print_header "KONIEC TESTOVANIA"

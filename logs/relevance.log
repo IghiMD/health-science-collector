@@ -1,0 +1,1372 @@
+2025-04-21 14:35:48,040 - article_processor - WARNING - Žiadny OPENAI_API_KEY nie je nastavený v prostredí!
+2025-04-21 14:35:48,082 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 14:35:48,082 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 14:35:48,082 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 14:35:48,082 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 14:35:48,762 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 398727 bajtov
+2025-04-21 14:35:48,763 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 14:35:48,794 - source_relevance - INFO - ❌ Nájdené kľúčové slová (1): věda
+2025-04-21 14:35:48,794 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 1 kľúčových slov (minimum 3)
+2025-04-21 14:35:48,794 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 14:35:48,794 - test_components - INFO - Relevantný: False
+2025-04-21 14:35:48,794 - test_components - INFO - Nájdené kľúčové slová: věda
+2025-04-21 14:35:48,794 - test_components - INFO - ---
+2025-04-21 14:35:48,794 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 14:35:48,794 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 14:35:49,362 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 378021 bajtov
+2025-04-21 14:35:49,362 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 14:35:49,394 - source_relevance - INFO - ❌ Nájdené kľúčové slová (1): mozek
+2025-04-21 14:35:49,394 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 1 kľúčových slov (minimum 3)
+2025-04-21 14:35:49,394 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 14:35:49,394 - test_components - INFO - Relevantný: False
+2025-04-21 14:35:49,394 - test_components - INFO - Nájdené kľúčové slová: mozek
+2025-04-21 14:35:49,394 - test_components - INFO - ---
+2025-04-21 14:35:49,394 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 14:35:49,394 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 14:35:49,873 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 373709 bajtov
+2025-04-21 14:35:49,873 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 14:35:49,904 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 14:35:49,904 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 3)
+2025-04-21 14:35:49,904 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 14:35:49,904 - test_components - INFO - Relevantný: False
+2025-04-21 14:35:49,904 - test_components - INFO - Nájdené kľúčové slová: 
+2025-04-21 14:35:49,904 - test_components - INFO - ---
+2025-04-21 14:35:49,904 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 14:35:49,904 - test_components - INFO - 
+2025-04-21 14:35:49,904 - test_components - INFO - === Test modulu article_processor ===
+2025-04-21 14:35:49,904 - test_components - INFO - Skúšam spracovať článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 14:35:49,905 - article_processor - INFO - Spracovávam článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 14:35:51,295 - article_processor - ERROR - Chyba pri sťahovaní článku z https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/: Article `download()` failed with 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/ on URL https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 14:35:51,295 - test_components - WARNING - Spracovanie článku zlyhalo.
+2025-04-21 14:35:51,296 - test_components - INFO - Skúšam spracovať článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 14:35:51,296 - article_processor - INFO - Spracovávam článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 14:35:52,014 - article_processor - WARNING - DEEPL_API_KEY nie je nastavený, skúšam Google Translate
+2025-04-21 14:35:52,014 - article_processor - WARNING - GOOGLE_TRANSLATE_API_KEY nie je nastavený, preklad nebude vykonaný
+2025-04-21 14:35:52,014 - article_processor - ERROR - Všetky metódy prekladu zlyhali. Vraciam originálny text.
+2025-04-21 14:35:52,014 - article_processor - WARNING - DEEPL_API_KEY nie je nastavený, skúšam Google Translate
+2025-04-21 14:35:52,014 - article_processor - WARNING - GOOGLE_TRANSLATE_API_KEY nie je nastavený, preklad nebude vykonaný
+2025-04-21 14:35:52,014 - article_processor - ERROR - Všetky metódy prekladu zlyhali. Vraciam originálny text.
+2025-04-21 14:35:52,014 - article_processor - ERROR - Všetky pokusy o generovanie štylizovaného súhrnu zlyhali.
+2025-04-21 14:35:52,014 - article_processor - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 14:35:52,014 - test_components - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 14:35:52,014 - test_components - INFO - Pôvodný jazyk: cs
+2025-04-21 14:35:52,014 - test_components - INFO - Preložený názov: Medicína
+2025-04-21 14:35:52,014 - test_components - INFO - AI sumár bol vygenerovaný:
+2025-04-21 14:35:52,015 - test_components - INFO - Generovanie súhrnu zlyhalo. Prosím, prečítajte si originálny článok....
+2025-04-21 14:35:52,015 - test_components - INFO - AI dovetok bol vygenerovaný:
+2025-04-21 14:35:52,015 - test_components - INFO - Generovanie dovetku zlyhalo.
+2025-04-21 14:35:52,015 - test_components - INFO - Test modulu article_processor dokončený
+2025-04-21 14:35:52,015 - test_components - INFO - 
+2025-04-21 14:35:52,015 - test_components - INFO - === Test modulu file_manager ===
+2025-04-21 14:35:52,015 - file_manager - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 14:35:52,015 - test_components - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 14:35:52,015 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/14-35
+2025-04-21 14:35:52,015 - test_components - INFO - Vytvorený hodinový priečinok: output/2025-04-21/14-35
+2025-04-21 14:35:52,030 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/14-35/2025-04-21_14-35.docx
+2025-04-21 14:35:52,030 - test_components - INFO - Vytvorený hodinový súbor: output/2025-04-21/14-35/2025-04-21_14-35.docx
+2025-04-21 14:35:52,043 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 14:35:52,043 - test_components - INFO - Vytvorený súhrnný súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 14:35:52,043 - test_components - WARNING - FTP údaje nie sú nastavené, preskakujem test FTP uploadu.
+2025-04-21 14:35:52,043 - test_components - WARNING - E-mailové údaje nie sú nastavené, preskakujem test odoslania e-mailu.
+2025-04-21 14:35:52,043 - test_components - INFO - Test modulu file_manager dokončený
+2025-04-21 14:35:52,043 - test_components - INFO - 
+2025-04-21 14:35:52,043 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 18:08:22,654 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 18:08:22,654 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 18:08:22,654 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 18:08:22,654 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 18:08:22,854 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 403332 bajtov
+2025-04-21 18:08:22,854 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 18:08:22,879 - source_relevance - INFO - ❌ Nájdené kľúčové slová (1): věda
+2025-04-21 18:08:22,879 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 1 kľúčových slov (minimum 3)
+2025-04-21 18:08:22,879 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 18:08:22,879 - test_components - INFO - Relevantný: False
+2025-04-21 18:08:22,879 - test_components - INFO - Nájdené kľúčové slová: věda
+2025-04-21 18:08:22,879 - test_components - INFO - ---
+2025-04-21 18:08:22,879 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 18:08:22,879 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 18:08:23,270 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 382325 bajtov
+2025-04-21 18:08:23,270 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 18:08:23,303 - source_relevance - INFO - ❌ Nájdené kľúčové slová (1): mozek
+2025-04-21 18:08:23,303 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 1 kľúčových slov (minimum 3)
+2025-04-21 18:08:23,303 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 18:08:23,303 - test_components - INFO - Relevantný: False
+2025-04-21 18:08:23,303 - test_components - INFO - Nájdené kľúčové slová: mozek
+2025-04-21 18:08:23,303 - test_components - INFO - ---
+2025-04-21 18:08:23,303 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 18:08:23,303 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 18:08:23,770 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 378038 bajtov
+2025-04-21 18:08:23,771 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 18:08:23,800 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 18:08:23,800 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 3)
+2025-04-21 18:08:23,800 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 18:08:23,800 - test_components - INFO - Relevantný: False
+2025-04-21 18:08:23,800 - test_components - INFO - Nájdené kľúčové slová: 
+2025-04-21 18:08:23,800 - test_components - INFO - ---
+2025-04-21 18:08:23,800 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 18:08:23,800 - test_components - INFO - 
+2025-04-21 18:08:23,800 - test_components - INFO - === Test modulu article_processor ===
+2025-04-21 18:08:23,800 - test_components - INFO - Skúšam spracovať článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 18:08:23,800 - article_processor - INFO - Spracovávam článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 18:08:24,993 - article_processor - ERROR - Chyba pri sťahovaní článku z https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/: Article `download()` failed with 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/ on URL https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 18:08:24,994 - test_components - WARNING - Spracovanie článku zlyhalo.
+2025-04-21 18:08:24,994 - test_components - INFO - Skúšam spracovať článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 18:08:24,994 - article_processor - INFO - Spracovávam článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 18:08:25,911 - article_processor - WARNING - DeepL API vrátilo chybový kód: 403
+2025-04-21 18:08:26,385 - article_processor - INFO - Text preložený pomocou Google Translate API
+2025-04-21 18:08:26,581 - article_processor - WARNING - DeepL API vrátilo chybový kód: 403
+2025-04-21 18:08:26,759 - article_processor - INFO - Text preložený pomocou Google Translate API
+2025-04-21 18:08:35,696 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 18:08:35,704 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 18:08:35,704 - article_processor - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 18:08:35,705 - test_components - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 18:08:35,705 - test_components - INFO - Pôvodný jazyk: cs
+2025-04-21 18:08:35,705 - test_components - INFO - Preložený názov: Medicína
+2025-04-21 18:08:35,705 - test_components - INFO - AI sumár bol vygenerovaný:
+2025-04-21 18:08:35,705 - test_components - INFO - **Sarkastický a virálny sumár:**
+
+Na čo je najlepšie sa tešiť v septembri? Nie, nie sú to tie úžasné jesenné festivaly tekvíc, ale samozrejme kongres ECTRIMS 2024, kde sa európski odborníci na skleróz...
+2025-04-21 18:08:35,705 - test_components - INFO - AI dovetok bol vygenerovaný:
+2025-04-21 18:08:35,705 - test_components - INFO - **
+
+Skleróza multiplex je chronické ochorenie, ktoré ovplyvňuje centrálny nervový systém a jeho príčina sa stále intenzívne skúma, pričom výskumníci sa snažia nájsť efektívnejšie liečebné postupy a spôsoby, ako zlepšiť kvalitu života pacientov.
+2025-04-21 18:08:35,705 - test_components - INFO - Test modulu article_processor dokončený
+2025-04-21 18:08:35,705 - test_components - INFO - 
+2025-04-21 18:08:35,706 - test_components - INFO - === Test modulu file_manager ===
+2025-04-21 18:08:35,706 - test_components - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 18:08:35,706 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/18-08
+2025-04-21 18:08:35,707 - test_components - INFO - Vytvorený hodinový priečinok: output/2025-04-21/18-08
+2025-04-21 18:08:35,735 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/18-08/2025-04-21_18-08.docx
+2025-04-21 18:08:35,735 - test_components - INFO - Vytvorený hodinový súbor: output/2025-04-21/18-08/2025-04-21_18-08.docx
+2025-04-21 18:08:35,752 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 18:08:35,752 - test_components - INFO - Vytvorený súhrnný súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 18:08:35,752 - test_components - INFO - Testujem FTP upload...
+2025-04-21 18:08:36,388 - file_manager - INFO - Súbor output/2025-04-21/18-08/2025-04-21_18-08.docx úspešne nahraný na FTP server.
+2025-04-21 18:08:36,389 - test_components - INFO - FTP upload výsledok: Úspešný
+2025-04-21 18:08:36,389 - test_components - INFO - Testujem odoslanie e-mailu...
+2025-04-21 18:11:36,622 - file_manager - ERROR - Chyba pri odosielaní notifikačného e-mailu: Connection unexpectedly closed
+2025-04-21 18:11:36,625 - test_components - INFO - Odoslanie e-mailu výsledok: Neúspešné
+2025-04-21 18:11:36,625 - test_components - INFO - Test modulu file_manager dokončený
+2025-04-21 18:11:36,625 - test_components - INFO - 
+2025-04-21 18:11:36,625 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 18:40:53,169 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 18:40:53,169 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 18:40:53,169 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 18:40:53,169 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 18:40:53,324 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 402557 bajtov
+2025-04-21 18:40:53,324 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 18:40:53,346 - source_relevance - INFO - ❌ Nájdené kľúčové slová (1): věda
+2025-04-21 18:40:53,346 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 1 kľúčových slov (minimum 3)
+2025-04-21 18:40:53,346 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 18:40:53,346 - test_components - INFO - Relevantný: False
+2025-04-21 18:40:53,346 - test_components - INFO - Nájdené kľúčové slová: věda
+2025-04-21 18:40:53,346 - test_components - INFO - ---
+2025-04-21 18:40:53,346 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 18:40:53,346 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 18:40:53,778 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 381553 bajtov
+2025-04-21 18:40:53,778 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 18:40:53,811 - source_relevance - INFO - ❌ Nájdené kľúčové slová (1): mozek
+2025-04-21 18:40:53,811 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 1 kľúčových slov (minimum 3)
+2025-04-21 18:40:53,811 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 18:40:53,811 - test_components - INFO - Relevantný: False
+2025-04-21 18:40:53,811 - test_components - INFO - Nájdené kľúčové slová: mozek
+2025-04-21 18:40:53,811 - test_components - INFO - ---
+2025-04-21 18:40:53,811 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 18:40:53,811 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 18:40:54,282 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 377240 bajtov
+2025-04-21 18:40:54,282 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 18:40:54,312 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 18:40:54,312 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 3)
+2025-04-21 18:40:54,312 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 18:40:54,312 - test_components - INFO - Relevantný: False
+2025-04-21 18:40:54,312 - test_components - INFO - Nájdené kľúčové slová: 
+2025-04-21 18:40:54,312 - test_components - INFO - ---
+2025-04-21 18:40:54,312 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 18:40:54,312 - test_components - INFO - 
+2025-04-21 18:40:54,312 - test_components - INFO - === Test modulu article_processor ===
+2025-04-21 18:40:54,312 - test_components - INFO - Skúšam spracovať článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 18:40:54,312 - article_processor - INFO - Spracovávam článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 18:40:55,429 - article_processor - ERROR - Chyba pri sťahovaní článku z https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/: Article `download()` failed with 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/ on URL https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 18:40:55,430 - test_components - WARNING - Spracovanie článku zlyhalo.
+2025-04-21 18:40:55,430 - test_components - INFO - Skúšam spracovať článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 18:40:55,430 - article_processor - INFO - Spracovávam článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 18:40:56,136 - article_processor - WARNING - DeepL API vrátilo chybový kód: 403
+2025-04-21 18:40:56,439 - article_processor - INFO - Text preložený pomocou Google Translate API
+2025-04-21 18:40:56,595 - article_processor - WARNING - DeepL API vrátilo chybový kód: 403
+2025-04-21 18:40:56,792 - article_processor - INFO - Text preložený pomocou Google Translate API
+2025-04-21 18:41:07,047 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 18:41:07,055 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 18:41:07,055 - article_processor - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 18:41:07,056 - test_components - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 18:41:07,056 - test_components - INFO - Pôvodný jazyk: cs
+2025-04-21 18:41:07,056 - test_components - INFO - Preložený názov: Medicína
+2025-04-21 18:41:07,056 - test_components - INFO - AI sumár bol vygenerovaný:
+2025-04-21 18:41:07,056 - test_components - INFO - **Sarkastický a virálny sumár:**
+
+No tak, priatelia, kto si už dnes nevychutná lahodnú šálku kávy a dobrú dávku roztrúsenej sklerózy na kongrese ECTRIMS 2024 v pôvabnom Dánsku? Lekári, vedci a ďalší n...
+2025-04-21 18:41:07,056 - test_components - INFO - AI dovetok bol vygenerovaný:
+2025-04-21 18:41:07,057 - test_components - INFO - **
+
+Roztrúsená skleróza je chronické ochorenie centrálneho nervového systému, ktoré postihuje milióny ľudí po celom svete a vyžaduje neustály výskum pre vývoj nových liečebných metód.
+2025-04-21 18:41:07,057 - test_components - INFO - Test modulu article_processor dokončený
+2025-04-21 18:41:07,057 - test_components - INFO - 
+2025-04-21 18:41:07,057 - test_components - INFO - === Test modulu file_manager ===
+2025-04-21 18:41:07,057 - test_components - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 18:41:07,058 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/18-41
+2025-04-21 18:41:07,058 - test_components - INFO - Vytvorený hodinový priečinok: output/2025-04-21/18-41
+2025-04-21 18:41:07,085 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/18-41/2025-04-21_18-41.docx
+2025-04-21 18:41:07,085 - test_components - INFO - Vytvorený hodinový súbor: output/2025-04-21/18-41/2025-04-21_18-41.docx
+2025-04-21 18:41:07,103 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 18:41:07,103 - test_components - INFO - Vytvorený súhrnný súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 18:41:07,103 - test_components - INFO - Testujem FTP upload...
+2025-04-21 18:41:07,481 - file_manager - INFO - Súbor output/2025-04-21/18-41/2025-04-21_18-41.docx úspešne nahraný na FTP server.
+2025-04-21 18:41:07,481 - test_components - INFO - FTP upload výsledok: Úspešný
+2025-04-21 18:41:07,482 - test_components - INFO - Testujem odoslanie e-mailu...
+2025-04-21 18:44:07,678 - file_manager - ERROR - Chyba pri odosielaní notifikačného e-mailu: Connection unexpectedly closed
+2025-04-21 18:44:07,678 - test_components - INFO - Odoslanie e-mailu výsledok: Neúspešné
+2025-04-21 18:44:07,678 - test_components - INFO - Test modulu file_manager dokončený
+2025-04-21 18:44:07,678 - test_components - INFO - 
+2025-04-21 18:44:07,679 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 19:33:27,870 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 19:33:27,871 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 19:33:27,871 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 19:33:27,871 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 19:33:28,341 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 389552 bajtov
+2025-04-21 19:33:28,341 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:33:32,169 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:32,172 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 19:33:32,173 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): věda
+2025-04-21 19:33:32,173 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:33:32,173 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 19:33:32,173 - test_components - INFO - Relevantný: True
+2025-04-21 19:33:32,173 - test_components - INFO - Nájdené kľúčové slová: věda
+2025-04-21 19:33:32,173 - test_components - INFO - AI relevancia: False
+2025-04-21 19:33:32,173 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 19:33:32,173 - test_components - INFO - ---
+2025-04-21 19:33:32,173 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 19:33:32,173 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 19:33:32,537 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 369276 bajtov
+2025-04-21 19:33:32,537 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:33:35,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:35,135 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na gastro scény, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:33:35,136 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): mozek
+2025-04-21 19:33:35,136 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:33:35,136 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: NIE
+
+Dôvod: Článok sa zameriava na gastro scény, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:33:35,136 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 19:33:35,136 - test_components - INFO - Relevantný: True
+2025-04-21 19:33:35,137 - test_components - INFO - Nájdené kľúčové slová: mozek
+2025-04-21 19:33:35,137 - test_components - INFO - AI relevancia: True
+2025-04-21 19:33:35,137 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Článok sa zameriava na gastro scény, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:33:35,137 - test_components - INFO - ---
+2025-04-21 19:33:35,137 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 19:33:35,137 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 19:33:35,462 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 364963 bajtov
+2025-04-21 19:33:35,462 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:33:37,207 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:37,210 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu o zdraví, medicíne alebo vede.
+2025-04-21 19:33:37,210 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 19:33:37,210 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 19:33:37,210 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu o zdraví, medicíne alebo vede.
+2025-04-21 19:33:37,210 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 19:33:37,210 - test_components - INFO - Relevantný: False
+2025-04-21 19:33:37,210 - test_components - INFO - Nájdené kľúčové slová: 
+2025-04-21 19:33:37,210 - test_components - INFO - AI relevancia: False
+2025-04-21 19:33:37,210 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu o zdraví, medicíne alebo vede.
+2025-04-21 19:33:37,210 - test_components - INFO - ---
+2025-04-21 19:33:37,211 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 19:33:37,211 - test_components - INFO - 
+2025-04-21 19:33:37,211 - test_components - INFO - === Test modulu article_processor ===
+2025-04-21 19:33:37,211 - test_components - INFO - Skúšam spracovať článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 19:33:37,211 - article_processor - INFO - Spracovávam článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 19:33:38,323 - article_processor - ERROR - Chyba pri sťahovaní článku z https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/: Article `download()` failed with 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/ on URL https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 19:33:38,324 - test_components - WARNING - Spracovanie článku zlyhalo.
+2025-04-21 19:33:38,324 - test_components - INFO - Skúšam spracovať článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 19:33:38,324 - article_processor - INFO - Spracovávam článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 19:33:39,435 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:33:39,664 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:33:47,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:47,634 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:33:47,635 - article_processor - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 19:33:47,636 - test_components - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 19:33:47,636 - test_components - INFO - Pôvodný jazyk: cs
+2025-04-21 19:33:47,636 - test_components - INFO - Preložený názov: Medicína
+2025-04-21 19:33:47,636 - test_components - INFO - AI sumár bol vygenerovaný:
+2025-04-21 19:33:47,636 - test_components - INFO - 1. **Sarkastický a virálny sumár**  
+Takže, na tohtoročnom kongrese ECTRIMS 2024 v Dánsku sa vedci rozhodli, že skleróza multiplex je stále taká komplikovaná, že by ju mohol dekódovať len Sherlock Hol...
+2025-04-21 19:33:47,636 - test_components - INFO - AI dovetok bol vygenerovaný:
+2025-04-21 19:33:47,636 - test_components - INFO - 2. **Edukačný dovetok**  
+Skleróza multiplex je autoimunitné ochorenie, ktoré napáda centrálny nervový systém, a napriek pokroku v liečbe stále čakáme na definitívny liek. Viac ako 2,8 milióna ľudí na celom svete dúfa, že vedecké kongresy prinesú prelomové odpovede, nie len ďalšie otázky.
+2025-04-21 19:33:47,636 - test_components - INFO - Test modulu article_processor dokončený
+2025-04-21 19:33:47,636 - test_components - INFO - 
+2025-04-21 19:33:47,636 - test_components - INFO - === Test modulu file_manager ===
+2025-04-21 19:33:47,636 - test_components - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 19:33:47,637 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/19-33
+2025-04-21 19:33:47,637 - test_components - INFO - Vytvorený hodinový priečinok: output/2025-04-21/19-33
+2025-04-21 19:33:47,666 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/19-33/2025-04-21_19-33.docx
+2025-04-21 19:33:47,667 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/19-33/2025-04-21_19-33.html
+2025-04-21 19:33:47,667 - test_components - INFO - Vytvorené hodinové súbory: output/2025-04-21/19-33/2025-04-21_19-33.docx, output/2025-04-21/19-33/2025-04-21_19-33.html
+2025-04-21 19:33:47,685 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 19:33:47,686 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/2025-04-21_summary.html
+2025-04-21 19:33:47,686 - test_components - INFO - Vytvorené súhrnné súbory: output/2025-04-21/2025-04-21_summary.docx, output/2025-04-21/2025-04-21_summary.html
+2025-04-21 19:33:47,686 - test_components - INFO - Testujem FTP upload...
+2025-04-21 19:33:48,290 - file_manager - INFO - Súbor output/2025-04-21/19-33/2025-04-21_19-33.docx úspešne nahraný na FTP server.
+2025-04-21 19:33:48,777 - file_manager - INFO - Súbor output/2025-04-21/19-33/2025-04-21_19-33.html úspešne nahraný na FTP server.
+2025-04-21 19:33:48,778 - test_components - INFO - FTP upload výsledky: ['Úspešný', 'Úspešný']
+2025-04-21 19:33:48,778 - test_components - INFO - Test modulu file_manager dokončený
+2025-04-21 19:33:48,779 - test_components - INFO - 
+2025-04-21 19:33:48,779 - test_components - INFO - === Test modulu email_processor ===
+2025-04-21 19:33:48,780 - test_components - INFO - Testujem spracovanie emailov...
+2025-04-21 19:33:49,439 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 19:33:49,510 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 19:33:49,511 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 19:33:49,587 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 19:33:49,588 - test_components - INFO - Spracovaných 0 emailov.
+2025-04-21 19:33:49,588 - test_components - INFO - Testujem získanie URL adries z emailov...
+2025-04-21 19:33:50,037 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 19:33:50,161 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 19:33:50,162 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 19:33:50,314 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 19:33:50,315 - email_processor - INFO - Získaných 0 unikátnych URL adries z e-mailov
+2025-04-21 19:33:50,315 - test_components - INFO - Získaných 0 unikátnych URL adries z emailov.
+2025-04-21 19:33:50,315 - test_components - INFO - Test modulu email_processor dokončený
+2025-04-21 19:33:50,316 - test_components - INFO - 
+2025-04-21 19:33:50,316 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 19:33:50,724 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 19:33:50,724 - test_components - INFO - === Test modulu email_processor ===
+2025-04-21 19:33:50,724 - test_components - INFO - Testujem spracovanie emailov...
+2025-04-21 19:33:51,106 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 19:33:51,218 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 19:33:51,219 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 19:33:51,319 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 19:33:51,320 - test_components - INFO - Spracovaných 0 emailov.
+2025-04-21 19:33:51,320 - test_components - INFO - Testujem získanie URL adries z emailov...
+2025-04-21 19:33:51,599 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 19:33:51,686 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 19:33:51,687 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 19:33:51,758 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 19:33:51,758 - email_processor - INFO - Získaných 0 unikátnych URL adries z e-mailov
+2025-04-21 19:33:51,758 - test_components - INFO - Získaných 0 unikátnych URL adries z emailov.
+2025-04-21 19:33:51,758 - test_components - INFO - Test modulu email_processor dokončený
+2025-04-21 19:33:51,758 - test_components - INFO - 
+2025-04-21 19:33:51,758 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 19:33:52,155 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 19:33:52,155 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 19:33:52,155 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 19:33:52,155 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 19:33:52,303 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 389552 bajtov
+2025-04-21 19:33:52,303 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:33:55,357 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:55,361 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie týkajúce sa zdravia, medicíny alebo vedy. Bez konkrétneho obsahu nie je možné určiť jeho relevanciu pre tieto oblasti.
+2025-04-21 19:33:55,361 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): věda
+2025-04-21 19:33:55,361 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:33:55,361 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 19:33:55,361 - test_components - INFO - Relevantný: True
+2025-04-21 19:33:55,361 - test_components - INFO - Nájdené kľúčové slová: věda
+2025-04-21 19:33:55,361 - test_components - INFO - AI relevancia: False
+2025-04-21 19:33:55,361 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie týkajúce sa zdravia, medicíny alebo vedy. Bez konkrétneho obsahu nie je možné určiť jeho relevanciu pre tieto oblasti.
+2025-04-21 19:33:55,361 - test_components - INFO - ---
+2025-04-21 19:33:55,361 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 19:33:55,361 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 19:33:55,517 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 369276 bajtov
+2025-04-21 19:33:55,517 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:33:58,087 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:58,091 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:33:58,092 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): mozek
+2025-04-21 19:33:58,092 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:33:58,092 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:33:58,092 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 19:33:58,093 - test_components - INFO - Relevantný: True
+2025-04-21 19:33:58,093 - test_components - INFO - Nájdené kľúčové slová: mozek
+2025-04-21 19:33:58,093 - test_components - INFO - AI relevancia: True
+2025-04-21 19:33:58,093 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:33:58,093 - test_components - INFO - ---
+2025-04-21 19:33:58,093 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 19:33:58,093 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 19:33:58,240 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 364963 bajtov
+2025-04-21 19:33:58,240 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:33:59,918 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:33:59,921 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie obsahu súvisiaceho so zdravím, medicínou alebo vedou.
+2025-04-21 19:33:59,921 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 19:33:59,922 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 19:33:59,922 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie obsahu súvisiaceho so zdravím, medicínou alebo vedou.
+2025-04-21 19:33:59,922 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 19:33:59,922 - test_components - INFO - Relevantný: False
+2025-04-21 19:33:59,922 - test_components - INFO - Nájdené kľúčové slová: 
+2025-04-21 19:33:59,922 - test_components - INFO - AI relevancia: False
+2025-04-21 19:33:59,922 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie obsahu súvisiaceho so zdravím, medicínou alebo vedou.
+2025-04-21 19:33:59,922 - test_components - INFO - ---
+2025-04-21 19:33:59,922 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 19:33:59,922 - test_components - INFO - 
+2025-04-21 19:33:59,922 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 19:34:00,334 - main_processor - INFO - === Začínam hodinové spracovanie správ ===
+2025-04-21 19:34:00,334 - main_processor - INFO - Aktuálny čas: 2025-04-21 19:34:00
+2025-04-21 19:34:00,334 - main_processor - INFO - Začínam spracovanie webových zdrojov...
+2025-04-21 19:34:00,334 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 19:34:00,334 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 19:34:00,516 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 389552 bajtov
+2025-04-21 19:34:00,516 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:03,301 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:03,304 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie týkajúce sa zdravia, medicíny alebo vedy. Je to len technický popis webovej stránky.
+2025-04-21 19:34:03,304 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): věda
+2025-04-21 19:34:03,304 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:34:03,304 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 19:34:03,304 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 19:34:03,437 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 369276 bajtov
+2025-04-21 19:34:03,437 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:05,735 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:05,738 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku sa zameriava na gastro scénu, reštaurácie, kavárne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke alebo vedecké informácie.
+2025-04-21 19:34:05,739 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): mozek
+2025-04-21 19:34:05,739 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:34:05,739 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 19:34:05,739 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 19:34:05,888 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 364963 bajtov
+2025-04-21 19:34:05,888 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:08,211 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:08,214 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu o zdraví, medicíne alebo vede.
+2025-04-21 19:34:08,214 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 19:34:08,214 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 19:34:08,214 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu o zdraví, medicíne alebo vede.
+2025-04-21 19:34:08,215 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Návody
+2025-04-21 19:34:08,215 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-navody-434
+2025-04-21 19:34:08,674 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 373844 bajtov
+2025-04-21 19:34:08,674 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:11,078 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:11,081 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku sa zameriava na návody týkajúce sa technológií a internetu, čo nie je priamo relevantné pre oblasť zdravia, medicíny alebo vedy.
+2025-04-21 19:34:11,081 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 19:34:11,081 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 19:34:11,081 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku sa zameriava na návody týkajúce sa technológií a internetu, čo nie je priamo relevantné pre oblasť zdravia, medicíny alebo vedy.
+2025-04-21 19:34:11,081 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Historie
+2025-04-21 19:34:11,081 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-historie-231
+2025-04-21 19:34:11,539 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 371325 bajtov
+2025-04-21 19:34:11,539 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:13,126 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:13,128 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku sa týka histórie a nie je zameraný na zdravie, medicínu alebo vedu.
+2025-04-21 19:34:13,129 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 19:34:13,129 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 19:34:13,129 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku sa týka histórie a nie je zameraný na zdravie, medicínu alebo vedu.
+2025-04-21 19:34:13,129 - source_relevance - INFO - Testujem relevanciu: Aktuálně.cz Zdravotnictví
+2025-04-21 19:34:13,129 - source_relevance - INFO - URL: https://zpravy.aktualne.cz/zdravotnictvi/l~i:keyword:95/
+2025-04-21 19:34:13,539 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 89323 bajtov
+2025-04-21 19:34:13,539 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:16,921 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:16,924 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Poskytnutý text je HTML kód webovej stránky a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra stránky bez obsahu, ktorý by mohol byť hodnotený z hľadiska relevantnosti pre zdravotnícke alebo vedecké informácie.
+2025-04-21 19:34:16,925 - source_relevance - INFO - ✅ Nájdené kľúčové slová (6): epidemie, operace, srdce, léky, zdraví, nemoc
+2025-04-21 19:34:16,925 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 6 kľúčových slov
+2025-04-21 19:34:16,925 - source_relevance - INFO - Testujem relevanciu: Ministr zdraví
+2025-04-21 19:34:16,925 - source_relevance - INFO - URL: https://www.ministrzdravi.cz/medialni-vystupy/
+2025-04-21 19:34:17,226 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 158834 bajtov
+2025-04-21 19:34:17,227 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:19,234 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:19,237 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a súvisí s HTML kódom webovej stránky, nie s konkrétnymi informáciami o zdraví, medicíne alebo vede.
+2025-04-21 19:34:19,237 - source_relevance - INFO - ✅ Nájdené kľúčové slová (2): prevence, zdraví
+2025-04-21 19:34:19,238 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 2 kľúčových slov
+2025-04-21 19:34:19,238 - source_relevance - INFO - Testujem relevanciu: Zdravé zprávy - Aktuality
+2025-04-21 19:34:19,238 - source_relevance - INFO - URL: https://www.zdravezpravy.cz/rubrika/aktuality/
+2025-04-21 19:34:20,965 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 324591 bajtov
+2025-04-21 19:34:20,966 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:23,743 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:23,746 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie alebo text týkajúci sa zdravia, medicíny alebo vedy.
+2025-04-21 19:34:23,746 - source_relevance - INFO - ✅ Nájdené kľúčové slová (6): studie, zdraví, léky, nemoc, věda, výzkum
+2025-04-21 19:34:23,746 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 6 kľúčových slov
+2025-04-21 19:34:23,746 - source_relevance - INFO - Testujem relevanciu: Zdravé zprávy - Zdravotnictví
+2025-04-21 19:34:23,746 - source_relevance - INFO - URL: https://www.zdravezpravy.cz/rubrika/zdravotnictvi/
+2025-04-21 19:34:24,987 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 325122 bajtov
+2025-04-21 19:34:24,987 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:28,602 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:28,605 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok je relevantný, pretože sa zameriava na informácie o zdravotníctve, čo je priamo spojené so zdravím a medicínou. Obsahuje informácie o dôležitých aspektoch zdravotnej starostlivosti a jej dostupnosti, čo sú kľúčové témy pre ľudí zaujímajúcich sa o zdravotnícke a vedecké informácie.
+2025-04-21 19:34:28,605 - source_relevance - INFO - ✅ Nájdené kľúčové slová (5): prevence, zdraví, léky, věda, výzkum
+2025-04-21 19:34:28,605 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 5 kľúčových slov
+2025-04-21 19:34:28,605 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: ÁNO
+
+Dôvod: Článok je relevantný, pretože sa zameriava na informácie o zdravotníctve, čo je priamo spojené so zdravím a medicínou. Obsahuje informácie o dôležitých aspektoch zdravotnej starostlivosti a jej dostupnosti, čo sú kľúčové témy pre ľudí zaujímajúcich sa o zdravotnícke a vedecké informácie.
+2025-04-21 19:34:28,605 - source_relevance - INFO - Testujem relevanciu: Medical Tribune
+2025-04-21 19:34:28,605 - source_relevance - INFO - URL: https://www.tribune.cz/vsechny-clanky/
+2025-04-21 19:34:28,876 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 81766 bajtov
+2025-04-21 19:34:28,876 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:30,679 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:30,684 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Poskytnutý text je technický HTML kód webovej stránky a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede.
+2025-04-21 19:34:30,685 - source_relevance - INFO - ✅ Nájdené kľúčové slová (6): prevence, studie, medicína, srdce, léčba, zdraví
+2025-04-21 19:34:30,685 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 6 kľúčových slov
+2025-04-21 19:34:30,685 - source_relevance - INFO - Testujem relevanciu: České noviny - RSS
+2025-04-21 19:34:30,685 - source_relevance - INFO - URL: https://www.ceskenoviny.cz/sluzby/rss/magazin.php
+2025-04-21 19:34:30,961 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 37832 bajtov
+2025-04-21 19:34:30,962 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:33,298 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:33,301 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok o tom, že geny ovplyvňujú požitek z hudby, je relevantný z hľadiska vedy, pretože sa zaoberá genetickým výskumom a jeho vplyvom na ľudské správanie a vnímanie.
+2025-04-21 19:34:33,301 - source_relevance - INFO - ✅ Nájdené kľúčové slová (2): studie, srdce
+2025-04-21 19:34:33,301 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 2 kľúčových slov
+2025-04-21 19:34:33,301 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: ÁNO
+
+Dôvod: Článok o tom, že geny ovplyvňujú požitek z hudby, je relevantný z hľadiska vedy, pretože sa zaoberá genetickým výskumom a jeho vplyvom na ľudské správanie a vnímanie.
+2025-04-21 19:34:33,301 - source_relevance - INFO - Testujem relevanciu: České noviny - Magazín
+2025-04-21 19:34:33,301 - source_relevance - INFO - URL: https://www.ceskenoviny.cz/magazin/
+2025-04-21 19:34:33,482 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 49655 bajtov
+2025-04-21 19:34:33,482 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:34:36,802 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:34:36,809 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický kód HTML a JavaScript, ktorý sa týka nastavení cookies a analytických skriptov na webovej stránke. Neobsahuje žiadne informácie týkajúce sa zdravia, medicíny alebo vedy, ktoré by boli relevantné pre ľudí zaujímajúcich sa o tieto oblasti.
+2025-04-21 19:34:36,809 - source_relevance - INFO - ✅ Nájdené kľúčové slová (4): věda, studie, zdraví, srdce
+2025-04-21 19:34:36,810 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 4 kľúčových slov
+2025-04-21 19:34:36,810 - main_processor - INFO - Identifikovaných 9 relevantných zdrojov z 12 testovaných.
+2025-04-21 19:34:38,164 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feed
+2025-04-21 19:34:38,198 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feeds
+2025-04-21 19:34:38,224 - main_processor - INFO - Získaných 58 odkazov zo zdroja Seznam Zprávy Tech
+2025-04-21 19:34:39,070 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feeds
+2025-04-21 19:34:39,151 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feed
+2025-04-21 19:34:39,175 - main_processor - INFO - Získaných 58 odkazov zo zdroja Seznam Zprávy Jídlo
+2025-04-21 19:34:40,088 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://zpravy.aktualne.cz/feed/
+2025-04-21 19:34:40,088 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://zpravy.aktualne.cz/feeds/
+2025-04-21 19:34:40,232 - main_processor - INFO - Získaných 13 odkazov zo zdroja Aktuálně.cz Zdravotnictví
+2025-04-21 19:34:40,988 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ministrzdravi.cz/feeds
+2025-04-21 19:34:41,266 - main_processor - INFO - Získaných 64 odkazov zo zdroja Ministr zdraví
+2025-04-21 19:34:45,098 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/feeds
+2025-04-21 19:34:47,042 - main_processor - INFO - Získaných 80 odkazov zo zdroja Zdravé zprávy - Aktuality
+2025-04-21 19:34:51,626 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/feeds
+2025-04-21 19:34:52,528 - main_processor - INFO - Získaných 80 odkazov zo zdroja Zdravé zprávy - Zdravotnictví
+2025-04-21 19:34:56,476 - main_processor - INFO - Získaných 21 odkazov zo zdroja Medical Tribune
+2025-04-21 19:34:57,978 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feeds
+2025-04-21 19:34:57,979 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feed
+2025-04-21 19:34:58,624 - main_processor - INFO - Získaných 0 odkazov zo zdroja České noviny - RSS
+2025-04-21 19:35:02,957 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feed
+2025-04-21 19:35:02,959 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feeds
+2025-04-21 19:35:03,355 - main_processor - INFO - Získaných 0 odkazov zo zdroja České noviny - Magazín
+2025-04-21 19:35:03,355 - main_processor - INFO - Celkovo získaných 374 odkazov na články.
+2025-04-21 19:35:03,355 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/tag/jak-se-zije-v-cesku-85230
+2025-04-21 19:35:05,429 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:06,039 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:08,313 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:08,317 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:08,317 - article_processor - INFO - Článok úspešne spracovaný: Jak se žije v Česku: Speciál Seznam Zpráv
+2025-04-21 19:35:08,320 - main_processor - INFO - Článok nie je relevantný: Jak se žije v Česku: Speciál Seznam Zpráv - 
+2025-04-21 19:35:08,320 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/kultura-festivaly-festival-karlovy-vary-237
+2025-04-21 19:35:10,966 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:11,631 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:17,710 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:17,714 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:17,714 - article_processor - INFO - Článok úspešne spracovaný: Filmový festival Karlovy Vary 2025: Program a hosté
+2025-04-21 19:35:17,715 - main_processor - INFO - Článok nie je relevantný: Filmový festival Karlovy Vary 2025: Program a hosté - 
+2025-04-21 19:35:17,715 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/sport-hokej-ms-v-hokeji-181
+2025-04-21 19:35:21,513 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:21,742 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:24,088 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:24,091 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:24,091 - article_processor - INFO - Článok úspešne spracovaný: program MS v Česku
+2025-04-21 19:35:24,092 - main_processor - INFO - Článok nie je relevantný: program MS v Česku - 
+2025-04-21 19:35:24,092 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/porady-stastne-pondeli-jindricha-sidla-18
+2025-04-21 19:35:24,679 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:24,886 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:26,711 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:26,714 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:26,715 - article_processor - INFO - Článok úspešne spracovaný: Šťastné pondělí
+2025-04-21 19:35:26,716 - main_processor - INFO - Článok nie je relevantný: Šťastné pondělí - 
+2025-04-21 19:35:26,716 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-ptam-se-ja-313
+2025-04-21 19:35:27,477 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:27,692 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:29,824 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:29,826 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:29,826 - article_processor - INFO - Článok úspešne spracovaný: Podcast Ptám se já
+2025-04-21 19:35:29,828 - main_processor - INFO - Článok nie je relevantný: Podcast Ptám se já - 
+2025-04-21 19:35:29,828 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-cteme-vam-sz-322
+2025-04-21 19:35:30,491 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:30,679 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:32,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:32,389 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:32,390 - article_processor - INFO - Článok úspešne spracovaný: Čteme vám SZ
+2025-04-21 19:35:32,391 - main_processor - INFO - Článok nie je relevantný: Čteme vám SZ - 
+2025-04-21 19:35:32,392 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-jedno-procento-milose-cermaka-307
+2025-04-21 19:35:33,047 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:33,294 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:43,296 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:43,300 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:43,300 - article_processor - INFO - Článok úspešne spracovaný: Podcast Jedno procento Miloše Čermáka
+2025-04-21 19:35:43,302 - main_processor - INFO - Článok nie je relevantný: Podcast Jedno procento Miloše Čermáka - 
+2025-04-21 19:35:43,302 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-podcast-odkryto-putinovi-vlci-491
+2025-04-21 19:35:44,121 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:44,322 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:46,107 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:46,110 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:46,111 - article_processor - INFO - Článok úspešne spracovaný: Putinovi vlci
+2025-04-21 19:35:46,113 - main_processor - INFO - Článok nie je relevantný: Putinovi vlci - 
+2025-04-21 19:35:46,113 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-evropa-zbroji-ale-jeden-region-zaostava-o-armade-moc-nevime-rika-expert-273964
+2025-04-21 19:35:46,578 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:46,806 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:53,721 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:35:53,725 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:35:53,726 - article_processor - INFO - Článok úspešne spracovaný: Evropa zbrojí, ale jeden region zaostává. „O armádě moc nevíme,“ říká expert
+2025-04-21 19:35:53,728 - main_processor - INFO - Článok nie je relevantný: Evropa zbrojí, ale jeden region zaostává. „O armádě moc nevíme,“ říká expert - 
+2025-04-21 19:35:53,728 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/magazin-jidlo-vejce-zdravi-cholesterol-273968
+2025-04-21 19:35:54,769 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:35:54,988 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:03,105 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:03,106 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:36:03,106 - article_processor - INFO - Článok úspešne spracovaný: Vejce: Jak je zdravé? A kolik jich můžeme sníst?
+2025-04-21 19:36:03,107 - main_processor - INFO - Článok nie je relevantný: Vejce: Jak je zdravé? A kolik jich můžeme sníst? - 
+2025-04-21 19:36:03,107 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/domaci-bar-zazil-kryla-nohavicu-i-spinarovou-a-ted-i-valku-se-sousedy-273948
+2025-04-21 19:36:05,012 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:05,559 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:14,346 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:14,348 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:36:14,348 - article_processor - INFO - Článok úspešne spracovaný: Chodil sem Kryl, Špinarová tu byla za štamgastku. Teď legendární bar končí
+2025-04-21 19:36:16,934 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:16,936 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zaoberá históriou a súčasnou situáciou legendárneho baru v Ostrave, jeho návštevníkmi a problémami s nájomným. Neobsahuje žiadne informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 19:36:16,936 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Chodil sem Kryl, Špinarová tu byla za štamgastku. Teď legendární bar končí
+2025-04-21 19:36:16,936 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/tech-technologie-veda-od-dvou-deci-k-nule-vedci-ukazali-ze-bezpecna-davka-alkoholu-byl-jen-mytus-274535
+2025-04-21 19:36:18,013 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:18,676 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:25,636 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:25,638 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:36:25,638 - article_processor - INFO - Článok úspešne spracovaný: Od dvou deci k nule: Vědci ukázali, že bezpečná dávka alkoholu byl jen mýtus
+2025-04-21 19:36:27,684 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:27,687 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na historické mýty o konzumácii alkoholu a vody v stredovekej Európe, ale neposkytuje aktuálne zdravotnícke alebo vedecké informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 19:36:27,687 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Od dvou deci k nule: Vědci ukázali, že bezpečná dávka alkoholu byl jen mýtus
+2025-04-21 19:36:27,687 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/obrazem-ocim-skryto-male-spicberky-v-mrazu-tu-uchovavaji-ceske-zemedelske-poklady-269538
+2025-04-21 19:36:28,126 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:28,425 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:36,899 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:36,902 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:36:36,903 - article_processor - INFO - Článok úspešne spracovaný: Očím skryto: Malé Špicberky. V mrazu tu uchovávají české zemědělské poklady
+2025-04-21 19:36:36,904 - main_processor - INFO - Článok nie je relevantný: Očím skryto: Malé Špicberky. V mrazu tu uchovávají české zemědělské poklady - 
+2025-04-21 19:36:36,904 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-vic-deti-uz-na-planete-nebude-jednoducha-vysvetleni-proc-uz-na-to-nestaci-274092
+2025-04-21 19:36:38,442 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:38,770 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:47,448 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:47,451 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:36:47,451 - article_processor - INFO - Článok úspešne spracovaný: Víc dětí už na planetě nebude. Jednoduchá vysvětlení proč už na to nestačí
+2025-04-21 19:36:50,601 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:50,604 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok sa zaoberá demografickými zmenami, konkrétne poklesom plodnosti, čo je relevantné pre oblasť zdravia a vedy. Diskutuje o úhrnnej plodnosti, teórii demografického prechodu a faktoroch ovplyvňujúcich rozhodnutia o rodičovstve, čo sú všetko témy dôležité pre pochopen
+2025-04-21 19:36:50,604 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Víc dětí už na planetě nebude. Jednoduchá vysvětlení proč už na to nestačí
+2025-04-21 19:36:50,604 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-archeologove-objevili-hrobku-neznameho-faraona-273484
+2025-04-21 19:36:51,360 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:51,617 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:36:58,751 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:36:58,755 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:36:58,755 - article_processor - INFO - Článok úspešne spracovaný: V Egyptě objevili hrobku neznámého faraona
+2025-04-21 19:36:58,756 - main_processor - INFO - Článok nie je relevantný: V Egyptě objevili hrobku neznámého faraona - 
+2025-04-21 19:36:58,756 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/domaci-dcera-chce-byt-pilotka-mladi-kadeti-si-zkusili-mesic-mars-i-beztiz-272851
+2025-04-21 19:36:59,861 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:00,175 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:07,211 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:07,213 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:37:07,213 - article_processor - INFO - Článok úspešne spracovaný: „Dcera chce být pilotka.“ Mladí kadeti si zkusili Měsíc, Mars i beztíži
+2025-04-21 19:37:08,892 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:08,901 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na osobný príbeh rodiny a záujem o kosmonautiku a pilotovanie, čo nie je priamo relevantné pre oblasť zdravia, medicíny alebo vedy.
+2025-04-21 19:37:08,902 - main_processor - INFO - Článok úspešne spracovaný a relevantný: „Dcera chce být pilotka.“ Mladí kadeti si zkusili Měsíc, Mars i beztíži
+2025-04-21 19:37:08,902 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/obrazem-ocim-skryto-130-tisic-tun-oceli-tady-se-opravuji-vagony-z-cele-evropy-271179
+2025-04-21 19:37:09,819 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:10,081 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:18,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:18,990 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:37:18,990 - article_processor - INFO - Článok úspešne spracovaný: Očím skryto: 130 tisíc tun oceli. Tady se opravují vagóny z celé Evropy
+2025-04-21 19:37:18,992 - main_processor - INFO - Článok nie je relevantný: Očím skryto: 130 tisíc tun oceli. Tady se opravují vagóny z celé Evropy - 
+2025-04-21 19:37:18,992 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-koronaviry-dalsi-pandemii-nezpusobi-spis-neco-jineho-rika-pionyr-oboru-271821
+2025-04-21 19:37:20,626 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:20,984 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:32,715 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:32,742 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:37:32,742 - article_processor - INFO - Článok úspešne spracovaný: Koronaviry další pandemii nezpůsobí, spíš něco jiného, říká pionýr oboru
+2025-04-21 19:37:34,862 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:34,868 - source_relevance - INFO - AI relevancia: ÁNO. Článok je relevantný z hľadiska zdravia, medicíny a vedy, pretože sa zaoberá štúdiom koronavírusov, ich evolúciou a potenciálnymi hrozbami pre budúce pandémie, čo sú dôležité témy pre verejné zdravie a vedecký výskum.
+2025-04-21 19:37:34,869 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Koronaviry další pandemii nezpůsobí, spíš něco jiného, říká pionýr oboru
+2025-04-21 19:37:34,869 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/tech-technologie-veda-telesne-tresty-skodi-detem-i-rodicum-zakaz-vyprasku-sam-o-sobe-nepomuze-269833
+2025-04-21 19:37:37,114 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:37,422 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:46,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:46,063 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:37:46,063 - article_processor - INFO - Článok úspešne spracovaný: Tělesné tresty škodí dětem i rodičům
+2025-04-21 19:37:49,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:37:49,100 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok sa zaoberá témou telesných trestov a ich vplyvom na deti, čo je relevantné z hľadiska psychológie a duševného zdravia. Diskusia o telesných trestoch má významné dôsledky pre vývoj detí a ich psychické zdravie, čo je dôležitá téma v oblasti zdravia a vedy.
+2025-04-21 19:37:49,100 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Tělesné tresty škodí dětem i rodičům
+2025-04-21 19:37:49,100 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/tech-technologie-lidske-mozkove-bunky-na-cipu-startup-uvadi-na-trh-prvni-biopocitac-271468
+2025-04-21 19:37:51,050 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:37:52,260 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:38:00,024 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:00,037 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:38:00,037 - article_processor - INFO - Článok úspešne spracovaný: Lidské mozkové buňky na čipu. Startup uvádí na trh první biopočítač
+2025-04-21 19:38:03,089 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:03,094 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok je relevantný z hľadiska vedy, pretože sa zaoberá inovatívnou technológiou biopočítačov, ktoré využívajú ľudské mozgové bunky. Tento vývoj má potenciálne významné dôsledky pre oblasť výpočtovej techniky, neurovedy a biotechnológie, čo sú všetko oblasti úzko spojené so zdravím a ved
+2025-04-21 19:38:03,094 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Lidské mozkové buňky na čipu. Startup uvádí na trh první biopočítač
+2025-04-21 19:38:03,094 - main_processor - INFO - Spracovaných 7 relevantných článkov z webových zdrojov.
+2025-04-21 19:38:03,095 - main_processor - INFO - Získaných 7 článkov z webových zdrojov.
+2025-04-21 19:38:03,095 - main_processor - INFO - Začínam spracovanie e-mailových zdrojov...
+2025-04-21 19:38:03,461 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 19:38:03,567 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 19:38:03,567 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 19:38:03,672 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 19:38:03,672 - email_processor - INFO - Získaných 0 unikátnych URL adries z e-mailov
+2025-04-21 19:38:03,673 - main_processor - INFO - Získaných 0 URL adries z e-mailov.
+2025-04-21 19:38:03,673 - main_processor - INFO - Spracovaných 0 relevantných článkov z e-mailov.
+2025-04-21 19:38:03,673 - main_processor - INFO - Získaných 0 článkov z e-mailových zdrojov.
+2025-04-21 19:38:03,673 - main_processor - INFO - Celkovo získaných 7 článkov.
+2025-04-21 19:38:03,674 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/19-34
+2025-04-21 19:38:03,736 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/19-34/2025-04-21_19-34.docx
+2025-04-21 19:38:03,737 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/19-34/2025-04-21_19-34.html
+2025-04-21 19:38:03,737 - main_processor - INFO - Vytvorené hodinové súbory: output/2025-04-21/19-34/2025-04-21_19-34.docx, output/2025-04-21/19-34/2025-04-21_19-34.html
+2025-04-21 19:38:04,163 - file_manager - INFO - Súbor output/2025-04-21/19-34/2025-04-21_19-34.docx úspešne nahraný na FTP server.
+2025-04-21 19:38:04,970 - file_manager - INFO - Súbor output/2025-04-21/19-34/2025-04-21_19-34.html úspešne nahraný na FTP server.
+2025-04-21 19:38:04,971 - main_processor - INFO - Vybraných 5 článkov pre denný súhrn.
+2025-04-21 19:38:05,026 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 19:38:05,026 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/2025-04-21_summary.html
+2025-04-21 19:38:05,026 - main_processor - INFO - Aktualizované súhrnné súbory: output/2025-04-21/2025-04-21_summary.docx, output/2025-04-21/2025-04-21_summary.html
+2025-04-21 19:38:05,450 - file_manager - INFO - Súbor output/2025-04-21/2025-04-21_summary.docx úspešne nahraný na FTP server.
+2025-04-21 19:38:06,017 - file_manager - INFO - Súbor output/2025-04-21/2025-04-21_summary.html úspešne nahraný na FTP server.
+2025-04-21 19:38:06,018 - main_processor - INFO - === Hodinové spracovanie správ ukončené ===
+2025-04-21 19:38:06,459 - main_processor - INFO - Začínam spracovanie e-mailových zdrojov...
+2025-04-21 19:38:06,908 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 19:38:07,012 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 19:38:07,013 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 19:38:07,115 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 19:38:07,116 - email_processor - INFO - Získaných 0 unikátnych URL adries z e-mailov
+2025-04-21 19:38:07,116 - main_processor - INFO - Získaných 0 URL adries z e-mailov.
+2025-04-21 19:38:07,116 - main_processor - INFO - Spracovaných 0 relevantných článkov z e-mailov.
+2025-04-21 19:38:07,116 - main_processor - INFO - Získaných 0 článkov z e-mailových zdrojov.
+2025-04-21 19:38:07,558 - main_processor - INFO - Začínam spracovanie webových zdrojov...
+2025-04-21 19:38:07,559 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 19:38:07,559 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 19:38:07,974 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 389551 bajtov
+2025-04-21 19:38:07,975 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:11,003 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:11,009 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 19:38:11,010 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): věda
+2025-04-21 19:38:11,010 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:38:11,010 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 19:38:11,011 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 19:38:11,374 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 369275 bajtov
+2025-04-21 19:38:11,376 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:19,816 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:19,819 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 19:38:19,819 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): mozek
+2025-04-21 19:38:19,820 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 19:38:19,821 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 19:38:19,821 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 19:38:20,229 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 364962 bajtov
+2025-04-21 19:38:20,231 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:22,888 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:22,891 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu článkov o zdraví, medicíne alebo vede.
+2025-04-21 19:38:22,891 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 19:38:22,891 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 19:38:22,891 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu článkov o zdraví, medicíne alebo vede.
+2025-04-21 19:38:22,892 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Návody
+2025-04-21 19:38:22,894 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-navody-434
+2025-04-21 19:38:23,446 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 373844 bajtov
+2025-04-21 19:38:23,447 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:25,747 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:25,752 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na návody týkajúce sa technológií a internetu, čo nie je priamo relevantné pre oblasť zdravia, medicíny alebo vedy.
+2025-04-21 19:38:25,752 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: NIE
+
+Dôvod: Článok sa zameriava na návody týkajúce sa technológií a internetu, čo nie je priamo relevantné pre oblasť zdravia, medicíny alebo vedy.
+2025-04-21 19:38:25,753 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Historie
+2025-04-21 19:38:25,753 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-historie-231
+2025-04-21 19:38:26,571 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 371326 bajtov
+2025-04-21 19:38:26,571 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:28,766 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:28,820 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na históriu a neobsahuje informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 19:38:28,820 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: NIE
+
+Dôvod: Článok sa zameriava na históriu a neobsahuje informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 19:38:28,821 - source_relevance - INFO - Testujem relevanciu: Aktuálně.cz Zdravotnictví
+2025-04-21 19:38:28,821 - source_relevance - INFO - URL: https://zpravy.aktualne.cz/zdravotnictvi/l~i:keyword:95/
+2025-04-21 19:38:29,491 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 89323 bajtov
+2025-04-21 19:38:29,491 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:33,063 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:33,066 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 19:38:33,066 - source_relevance - INFO - ✅ Nájdené kľúčové slová (6): operace, léky, nemoc, srdce, zdraví, epidemie
+2025-04-21 19:38:33,067 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 6 kľúčových slov
+2025-04-21 19:38:33,067 - source_relevance - INFO - Testujem relevanciu: Ministr zdraví
+2025-04-21 19:38:33,067 - source_relevance - INFO - URL: https://www.ministrzdravi.cz/medialni-vystupy/
+2025-04-21 19:38:33,353 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 158834 bajtov
+2025-04-21 19:38:33,358 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:36,840 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:36,841 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML a neobsahuje žiadne konkrétne informácie týkajúce sa zdravia, medicíny alebo vedy. Ide o technické metaúdaje a odkazy na ikony a obrázky, ktoré nie sú relevantné pre zdravotnícke alebo vedecké informácie.
+2025-04-21 19:38:36,842 - source_relevance - INFO - ✅ Nájdené kľúčové slová (2): prevence, zdraví
+2025-04-21 19:38:36,842 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 2 kľúčových slov
+2025-04-21 19:38:36,842 - source_relevance - INFO - Testujem relevanciu: Zdravé zprávy - Aktuality
+2025-04-21 19:38:36,842 - source_relevance - INFO - URL: https://www.zdravezpravy.cz/rubrika/aktuality/
+2025-04-21 19:38:38,970 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 324591 bajtov
+2025-04-21 19:38:38,971 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:42,453 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:42,455 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok je relevantný, pretože sa zameriava na aktuálne správy zo zdravotníctva, zvládanie covidu-19, farmáciu, poistenie, výskum, sociálne služby a zdravý životný štýl, čo sú všetko témy súvisiace so zdravím, medicínou a vedou.
+2025-04-21 19:38:42,455 - source_relevance - INFO - ✅ Nájdené kľúčové slová (6): studie, léky, nemoc, výzkum, věda, zdraví
+2025-04-21 19:38:42,455 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 6 kľúčových slov
+2025-04-21 19:38:42,455 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: ÁNO
+
+Dôvod: Článok je relevantný, pretože sa zameriava na aktuálne správy zo zdravotníctva, zvládanie covidu-19, farmáciu, poistenie, výskum, sociálne služby a zdravý životný štýl, čo sú všetko témy súvisiace so zdravím, medicínou a vedou.
+2025-04-21 19:38:42,455 - source_relevance - INFO - Testujem relevanciu: Zdravé zprávy - Zdravotnictví
+2025-04-21 19:38:42,455 - source_relevance - INFO - URL: https://www.zdravezpravy.cz/rubrika/zdravotnictvi/
+2025-04-21 19:38:44,204 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 325122 bajtov
+2025-04-21 19:38:44,205 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:46,113 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:46,117 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický kód HTML a metaúdaje, ktoré neobsahujú žiadne konkrétne informácie o zdraví, medicíne alebo vede.
+2025-04-21 19:38:46,117 - source_relevance - INFO - ✅ Nájdené kľúčové slová (5): léky, výzkum, prevence, věda, zdraví
+2025-04-21 19:38:46,117 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 5 kľúčových slov
+2025-04-21 19:38:46,118 - source_relevance - INFO - Testujem relevanciu: Medical Tribune
+2025-04-21 19:38:46,118 - source_relevance - INFO - URL: https://www.tribune.cz/vsechny-clanky/
+2025-04-21 19:38:46,627 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 81766 bajtov
+2025-04-21 19:38:46,627 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:52,217 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:52,222 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Poskytnutý text neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Ide o úryvok HTML kódu webovej stránky, ktorý neobsahuje žiadny obsah článku, ale len technické a meta informácie o stránke.
+2025-04-21 19:38:52,223 - source_relevance - INFO - ✅ Nájdené kľúčové slová (6): léčba, studie, medicína, prevence, srdce, zdraví
+2025-04-21 19:38:52,223 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 6 kľúčových slov
+2025-04-21 19:38:52,223 - source_relevance - INFO - Testujem relevanciu: České noviny - RSS
+2025-04-21 19:38:52,223 - source_relevance - INFO - URL: https://www.ceskenoviny.cz/sluzby/rss/magazin.php
+2025-04-21 19:38:52,382 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 37832 bajtov
+2025-04-21 19:38:52,383 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:38:55,826 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:38:55,837 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok o tom, že geny z veľkej časti ovplyvňujú požitek z hudby, je relevantný z hľadiska vedy, pretože sa zaoberá genetickým výskumom a jeho vplyvom na ľudské správanie a zážitky.
+2025-04-21 19:38:55,837 - source_relevance - INFO - ✅ Nájdené kľúčové slová (2): srdce, studie
+2025-04-21 19:38:55,837 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 2 kľúčových slov
+2025-04-21 19:38:55,837 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: ÁNO
+
+Dôvod: Článok o tom, že geny z veľkej časti ovplyvňujú požitek z hudby, je relevantný z hľadiska vedy, pretože sa zaoberá genetickým výskumom a jeho vplyvom na ľudské správanie a zážitky.
+2025-04-21 19:38:55,838 - source_relevance - INFO - Testujem relevanciu: České noviny - Magazín
+2025-04-21 19:38:55,838 - source_relevance - INFO - URL: https://www.ceskenoviny.cz/magazin/
+2025-04-21 19:38:56,008 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 49655 bajtov
+2025-04-21 19:38:56,008 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 19:39:01,173 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:39:01,178 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický kód HTML a JavaScript, ktorý nesúvisí s témami zdravia, medicíny alebo vedy. Neobsahuje žiadne relevantné informácie pre ľudí zaujímajúcich sa o zdravotnícke a vedecké informácie.
+2025-04-21 19:39:01,178 - source_relevance - INFO - ✅ Nájdené kľúčové slová (4): srdce, věda, zdraví, studie
+2025-04-21 19:39:01,179 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 4 kľúčových slov
+2025-04-21 19:39:01,179 - main_processor - INFO - Identifikovaných 11 relevantných zdrojov z 12 testovaných.
+2025-04-21 19:39:02,360 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feed
+2025-04-21 19:39:02,406 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feeds
+2025-04-21 19:39:02,434 - main_processor - INFO - Získaných 58 odkazov zo zdroja Seznam Zprávy Tech
+2025-04-21 19:39:03,282 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feeds
+2025-04-21 19:39:03,296 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feed
+2025-04-21 19:39:03,369 - main_processor - INFO - Získaných 58 odkazov zo zdroja Seznam Zprávy Jídlo
+2025-04-21 19:39:04,142 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feeds
+2025-04-21 19:39:04,142 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feed
+2025-04-21 19:39:04,209 - main_processor - INFO - Získaných 58 odkazov zo zdroja Seznam Zprávy Návody
+2025-04-21 19:39:04,886 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feed
+2025-04-21 19:39:04,911 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.seznamzpravy.cz/feeds
+2025-04-21 19:39:04,957 - main_processor - INFO - Získaných 58 odkazov zo zdroja Seznam Zprávy Historie
+2025-04-21 19:39:06,343 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://zpravy.aktualne.cz/feed/
+2025-04-21 19:39:06,353 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://zpravy.aktualne.cz/feeds/
+2025-04-21 19:39:06,432 - main_processor - INFO - Získaných 13 odkazov zo zdroja Aktuálně.cz Zdravotnictví
+2025-04-21 19:39:07,159 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ministrzdravi.cz/feeds
+2025-04-21 19:39:07,443 - main_processor - INFO - Získaných 64 odkazov zo zdroja Ministr zdraví
+2025-04-21 19:39:11,234 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/feeds
+2025-04-21 19:39:12,041 - main_processor - INFO - Získaných 80 odkazov zo zdroja Zdravé zprávy - Aktuality
+2025-04-21 19:39:16,083 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/feeds
+2025-04-21 19:39:16,782 - main_processor - INFO - Získaných 80 odkazov zo zdroja Zdravé zprávy - Zdravotnictví
+2025-04-21 19:39:19,289 - main_processor - INFO - Získaných 21 odkazov zo zdroja Medical Tribune
+2025-04-21 19:39:19,697 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feed
+2025-04-21 19:39:19,705 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feeds
+2025-04-21 19:39:19,758 - main_processor - INFO - Získaných 0 odkazov zo zdroja České noviny - RSS
+2025-04-21 19:39:20,219 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feeds
+2025-04-21 19:39:20,238 - newspaper.network - CRITICAL - [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.ceskenoviny.cz/feed
+2025-04-21 19:39:20,305 - main_processor - INFO - Získaných 0 odkazov zo zdroja České noviny - Magazín
+2025-04-21 19:39:20,305 - main_processor - INFO - Celkovo získaných 490 odkazov na články.
+2025-04-21 19:39:20,305 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/tag/jak-se-zije-v-cesku-85230
+2025-04-21 19:39:21,714 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:22,014 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:29,040 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:39:29,043 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:39:29,044 - article_processor - INFO - Článok úspešne spracovaný: Jak se žije v Česku: Speciál Seznam Zpráv
+2025-04-21 19:39:29,050 - main_processor - INFO - Článok nie je relevantný: Jak se žije v Česku: Speciál Seznam Zpráv - 
+2025-04-21 19:39:29,050 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/kultura-festivaly-festival-karlovy-vary-237
+2025-04-21 19:39:29,829 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:30,064 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:40,004 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:39:40,015 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:39:40,016 - article_processor - INFO - Článok úspešne spracovaný: Filmový festival Karlovy Vary 2025: Program a hosté
+2025-04-21 19:39:40,018 - main_processor - INFO - Článok nie je relevantný: Filmový festival Karlovy Vary 2025: Program a hosté - 
+2025-04-21 19:39:40,019 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/sport-hokej-ms-v-hokeji-181
+2025-04-21 19:39:40,894 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:41,133 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:47,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:39:47,679 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:39:47,680 - article_processor - INFO - Článok úspešne spracovaný: program MS v Česku
+2025-04-21 19:39:47,682 - main_processor - INFO - Článok nie je relevantný: program MS v Česku - 
+2025-04-21 19:39:47,682 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/porady-stastne-pondeli-jindricha-sidla-18
+2025-04-21 19:39:49,287 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:49,503 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:52,081 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:39:52,084 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:39:52,084 - article_processor - INFO - Článok úspešne spracovaný: Šťastné pondělí
+2025-04-21 19:39:52,087 - main_processor - INFO - Článok nie je relevantný: Šťastné pondělí - 
+2025-04-21 19:39:52,087 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-ptam-se-ja-313
+2025-04-21 19:39:52,814 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:39:53,021 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:00,323 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:00,327 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:00,327 - article_processor - INFO - Článok úspešne spracovaný: Podcast Ptám se já
+2025-04-21 19:40:00,331 - main_processor - INFO - Článok nie je relevantný: Podcast Ptám se já - 
+2025-04-21 19:40:00,331 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-cteme-vam-sz-322
+2025-04-21 19:40:01,097 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:01,298 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:03,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:03,758 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:03,759 - article_processor - INFO - Článok úspešne spracovaný: Čteme vám SZ
+2025-04-21 19:40:03,761 - main_processor - INFO - Článok nie je relevantný: Čteme vám SZ - 
+2025-04-21 19:40:03,761 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-jedno-procento-milose-cermaka-307
+2025-04-21 19:40:04,528 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:04,750 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:15,842 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:15,845 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:15,846 - article_processor - INFO - Článok úspešne spracovaný: Podcast Jedno procento Miloše Čermáka
+2025-04-21 19:40:15,850 - main_processor - INFO - Článok nie je relevantný: Podcast Jedno procento Miloše Čermáka - 
+2025-04-21 19:40:15,850 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/sekce/audio-podcast-podcast-odkryto-putinovi-vlci-491
+2025-04-21 19:40:16,677 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:16,909 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:19,116 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:19,119 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:19,119 - article_processor - INFO - Článok úspešne spracovaný: Putinovi vlci
+2025-04-21 19:40:19,121 - main_processor - INFO - Článok nie je relevantný: Putinovi vlci - 
+2025-04-21 19:40:19,122 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-evropa-zbroji-ale-jeden-region-zaostava-o-armade-moc-nevime-rika-expert-273964
+2025-04-21 19:40:19,584 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:19,811 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:26,795 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:26,798 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:26,799 - article_processor - INFO - Článok úspešne spracovaný: Evropa zbrojí, ale jeden region zaostává. „O armádě moc nevíme,“ říká expert
+2025-04-21 19:40:26,802 - main_processor - INFO - Článok nie je relevantný: Evropa zbrojí, ale jeden region zaostává. „O armádě moc nevíme,“ říká expert - 
+2025-04-21 19:40:26,802 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/magazin-jidlo-vejce-zdravi-cholesterol-273968
+2025-04-21 19:40:27,686 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:27,902 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:34,372 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:34,376 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:34,377 - article_processor - INFO - Článok úspešne spracovaný: Vejce: Jak je zdravé? A kolik jich můžeme sníst?
+2025-04-21 19:40:34,380 - main_processor - INFO - Článok nie je relevantný: Vejce: Jak je zdravé? A kolik jich můžeme sníst? - 
+2025-04-21 19:40:34,380 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/domaci-bar-zazil-kryla-nohavicu-i-spinarovou-a-ted-i-valku-se-sousedy-273948
+2025-04-21 19:40:38,572 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:38,891 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:47,991 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:47,994 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:40:47,995 - article_processor - INFO - Článok úspešne spracovaný: Chodil sem Kryl, Špinarová tu byla za štamgastku. Teď legendární bar končí
+2025-04-21 19:40:52,192 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:40:52,196 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zaoberá históriou a súčasnou situáciou legendárneho baru v Ostrave, jeho návštevníkmi a problémami s nájomným. Neobsahuje žiadne informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 19:40:52,197 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Chodil sem Kryl, Špinarová tu byla za štamgastku. Teď legendární bar končí
+2025-04-21 19:40:52,197 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/tech-technologie-veda-od-dvou-deci-k-nule-vedci-ukazali-ze-bezpecna-davka-alkoholu-byl-jen-mytus-274535
+2025-04-21 19:40:53,275 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:40:53,588 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:01,203 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:01,207 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:41:01,207 - article_processor - INFO - Článok úspešne spracovaný: Od dvou deci k nule: Vědci ukázali, že bezpečná dávka alkoholu byl jen mýtus
+2025-04-21 19:41:04,246 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:04,249 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na historické mýty o konzumácii alkoholu a vody v stredovekej Európe, ale neposkytuje aktuálne zdravotnícke alebo vedecké informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 19:41:04,249 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Od dvou deci k nule: Vědci ukázali, že bezpečná dávka alkoholu byl jen mýtus
+2025-04-21 19:41:04,249 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/obrazem-ocim-skryto-male-spicberky-v-mrazu-tu-uchovavaji-ceske-zemedelske-poklady-269538
+2025-04-21 19:41:05,064 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:05,437 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:13,596 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:13,604 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:41:13,604 - article_processor - INFO - Článok úspešne spracovaný: Očím skryto: Malé Špicberky. V mrazu tu uchovávají české zemědělské poklady
+2025-04-21 19:41:13,606 - main_processor - INFO - Článok nie je relevantný: Očím skryto: Malé Špicberky. V mrazu tu uchovávají české zemědělské poklady - 
+2025-04-21 19:41:13,606 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-vic-deti-uz-na-planete-nebude-jednoducha-vysvetleni-proc-uz-na-to-nestaci-274092
+2025-04-21 19:41:15,236 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:15,622 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:24,511 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:24,517 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:41:24,517 - article_processor - INFO - Článok úspešne spracovaný: Víc dětí už na planetě nebude. Jednoduchá vysvětlení proč už na to nestačí
+2025-04-21 19:41:27,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:27,624 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok sa zaoberá demografickými zmenami, konkrétne poklesom plodnosti, čo je relevantné pre oblasť verejného zdravia a medicíny. Tieto zmeny majú významný dopad na zdravotnícke systémy, plánovanie zdravotnej starostlivosti a sociálne politiky. Diskusia o úhrnnej plodnosti a demografickom prechode
+2025-04-21 19:41:27,625 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Víc dětí už na planetě nebude. Jednoduchá vysvětlení proč už na to nestačí
+2025-04-21 19:41:27,625 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-archeologove-objevili-hrobku-neznameho-faraona-273484
+2025-04-21 19:41:28,624 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:28,912 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:37,623 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:37,627 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:41:37,627 - article_processor - INFO - Článok úspešne spracovaný: V Egyptě objevili hrobku neznámého faraona
+2025-04-21 19:41:37,630 - main_processor - INFO - Článok nie je relevantný: V Egyptě objevili hrobku neznámého faraona - 
+2025-04-21 19:41:37,630 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/domaci-dcera-chce-byt-pilotka-mladi-kadeti-si-zkusili-mesic-mars-i-beztiz-272851
+2025-04-21 19:41:38,988 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:39,323 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:50,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:50,155 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:41:50,155 - article_processor - INFO - Článok úspešne spracovaný: „Dcera chce být pilotka.“ Mladí kadeti si zkusili Měsíc, Mars i beztíži
+2025-04-21 19:41:51,883 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:41:51,886 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na osobný príbeh a záujem o kosmonautiku a pilotovanie, ale neobsahuje žiadne konkrétne informácie týkajúce sa zdravia, medicíny alebo vedeckých výskumov.
+2025-04-21 19:41:51,886 - main_processor - INFO - Článok úspešne spracovaný a relevantný: „Dcera chce být pilotka.“ Mladí kadeti si zkusili Měsíc, Mars i beztíži
+2025-04-21 19:41:51,887 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/obrazem-ocim-skryto-130-tisic-tun-oceli-tady-se-opravuji-vagony-z-cele-evropy-271179
+2025-04-21 19:41:52,766 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:41:52,990 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:03,582 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:03,588 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:42:03,589 - article_processor - INFO - Článok úspešne spracovaný: Očím skryto: 130 tisíc tun oceli. Tady se opravují vagóny z celé Evropy
+2025-04-21 19:42:03,596 - main_processor - INFO - Článok nie je relevantný: Očím skryto: 130 tisíc tun oceli. Tady se opravují vagóny z celé Evropy - 
+2025-04-21 19:42:03,596 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/zahranicni-koronaviry-dalsi-pandemii-nezpusobi-spis-neco-jineho-rika-pionyr-oboru-271821
+2025-04-21 19:42:05,239 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:05,585 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:14,830 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:14,831 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:42:14,832 - article_processor - INFO - Článok úspešne spracovaný: Koronaviry další pandemii nezpůsobí, spíš něco jiného, říká pionýr oboru
+2025-04-21 19:42:17,598 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:17,602 - source_relevance - INFO - AI relevancia: ÁNO. Článok je relevantný z hľadiska zdravia, medicíny a vedy, pretože sa zaoberá štúdiom koronavírusov, ich vývojom a potenciálnymi budúcimi pandémiami, čo sú dôležité témy pre verejné zdravie a vedecký výskum.
+2025-04-21 19:42:17,602 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Koronaviry další pandemii nezpůsobí, spíš něco jiného, říká pionýr oboru
+2025-04-21 19:42:17,602 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/tech-technologie-veda-telesne-tresty-skodi-detem-i-rodicum-zakaz-vyprasku-sam-o-sobe-nepomuze-269833
+2025-04-21 19:42:19,848 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:21,075 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:29,782 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:29,785 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:42:29,785 - article_processor - INFO - Článok úspešne spracovaný: Tělesné tresty škodí dětem i rodičům
+2025-04-21 19:42:33,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:33,060 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok sa zaoberá témou telesných trestov, ktorá má priamy vplyv na psychické a fyzické zdravie detí. Diskusia o telesných trestoch je relevantná z hľadiska psychológie, pediatrie a verejného zdravia, pretože sa týka výchovy detí a ich vývoja.
+2025-04-21 19:42:33,060 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Tělesné tresty škodí dětem i rodičům
+2025-04-21 19:42:33,060 - article_processor - INFO - Spracovávam článok: https://www.seznamzpravy.cz/clanek/tech-technologie-lidske-mozkove-bunky-na-cipu-startup-uvadi-na-trh-prvni-biopocitac-271468
+2025-04-21 19:42:34,799 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:35,071 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 19:42:44,118 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:44,120 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 19:42:44,121 - article_processor - INFO - Článok úspešne spracovaný: Lidské mozkové buňky na čipu. Startup uvádí na trh první biopočítač
+2025-04-21 19:42:53,736 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 19:42:53,739 - source_relevance - INFO - AI relevancia: ÁNO
+
+Dôvod: Článok je relevantný pre oblasť vedy a medicíny, pretože sa zaoberá inovatívnym využitím ľudských mozgových buniek v biopočítačoch. Téma zahŕňa pokročilé technológie, syntetickú biologickú inteligenciu a potenciálne aplikácie v oblasti výpočtovej techniky a neurovedy, čo sú všetko oblasti zá
+2025-04-21 19:42:53,739 - main_processor - INFO - Článok úspešne spracovaný a relevantný: Lidské mozkové buňky na čipu. Startup uvádí na trh první biopočítač
+2025-04-21 19:42:53,740 - main_processor - INFO - Spracovaných 7 relevantných článkov z webových zdrojov.
+2025-04-21 19:42:53,740 - main_processor - INFO - Získaných 7 článkov z webových zdrojov.
+2025-04-21 19:42:53,741 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/19-42
+2025-04-21 19:42:53,801 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/19-42/2025-04-21_19-42.docx
+2025-04-21 19:42:53,802 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/19-42/2025-04-21_19-42.html
+2025-04-21 19:42:53,802 - main_processor - INFO - Vytvorené súbory: output/2025-04-21/19-42/2025-04-21_19-42.docx, output/2025-04-21/19-42/2025-04-21_19-42.html
+2025-04-21 19:42:54,229 - file_manager - INFO - Súbor output/2025-04-21/19-42/2025-04-21_19-42.docx úspešne nahraný na FTP server.
+2025-04-21 19:42:54,735 - file_manager - INFO - Súbor output/2025-04-21/19-42/2025-04-21_19-42.html úspešne nahraný na FTP server.
+2025-04-21 20:58:38,457 - main_processor - INFO - Plánovač spustený. Čakám na najbližšiu plánovanú úlohu...
+2025-04-21 20:58:38,457 - main_processor - INFO - Stlačte Ctrl+C pre ukončenie.
+2025-04-21 20:59:16,683 - main_processor - INFO - Plánovač ukončený užívateľom.
+2025-04-21 20:59:36,758 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 20:59:36,758 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 20:59:36,758 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 20:59:36,758 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 20:59:37,303 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 397749 bajtov
+2025-04-21 20:59:37,303 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 20:59:45,362 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 20:59:45,368 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 20:59:45,368 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): věda
+2025-04-21 20:59:45,368 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 20:59:45,368 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 20:59:45,369 - test_components - INFO - Relevantný: True
+2025-04-21 20:59:45,369 - test_components - INFO - Nájdené kľúčové slová: věda
+2025-04-21 20:59:45,369 - test_components - INFO - AI relevancia: False
+2025-04-21 20:59:45,369 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je vo formáte HTML a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 20:59:45,369 - test_components - INFO - ---
+2025-04-21 20:59:45,369 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 20:59:45,369 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 20:59:45,830 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 377472 bajtov
+2025-04-21 20:59:45,830 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 20:59:48,632 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 20:59:48,635 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kavárne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke alebo vedecké informácie.
+2025-04-21 20:59:48,636 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): mozek
+2025-04-21 20:59:48,636 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 20:59:48,636 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kavárne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke alebo vedecké informácie.
+2025-04-21 20:59:48,636 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 20:59:48,637 - test_components - INFO - Relevantný: True
+2025-04-21 20:59:48,637 - test_components - INFO - Nájdené kľúčové slová: mozek
+2025-04-21 20:59:48,637 - test_components - INFO - AI relevancia: True
+2025-04-21 20:59:48,637 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kavárne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke alebo vedecké informácie.
+2025-04-21 20:59:48,637 - test_components - INFO - ---
+2025-04-21 20:59:48,637 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 20:59:48,637 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 20:59:49,104 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 373184 bajtov
+2025-04-21 20:59:49,104 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 20:59:52,216 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 20:59:52,219 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu článku. Neobsahuje žiadne informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 20:59:52,220 - source_relevance - INFO - ❌ Nájdené kľúčové slová (0): 
+2025-04-21 20:59:52,220 - source_relevance - INFO - ❌ Zdroj nie je relevantný - nájdených len 0 kľúčových slov (minimum 1)
+2025-04-21 20:59:52,220 - source_relevance - INFO - ❌ Zdroj nie je relevantný podľa AI: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu článku. Neobsahuje žiadne informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 20:59:52,220 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 20:59:52,220 - test_components - INFO - Relevantný: False
+2025-04-21 20:59:52,221 - test_components - INFO - Nájdené kľúčové slová: 
+2025-04-21 20:59:52,221 - test_components - INFO - AI relevancia: False
+2025-04-21 20:59:52,221 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je technický a týka sa HTML kódu webovej stránky, nie samotného obsahu článku. Neobsahuje žiadne informácie týkajúce sa zdravia, medicíny alebo vedy.
+2025-04-21 20:59:52,221 - test_components - INFO - ---
+2025-04-21 20:59:52,221 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 20:59:52,221 - test_components - INFO - 
+2025-04-21 20:59:52,221 - test_components - INFO - === Test modulu article_processor ===
+2025-04-21 20:59:52,221 - test_components - INFO - Skúšam spracovať článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 20:59:52,222 - article_processor - INFO - Spracovávam článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 20:59:53,382 - article_processor - ERROR - Chyba pri sťahovaní článku z https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/: Article `download()` failed with 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/ on URL https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 20:59:53,382 - test_components - WARNING - Spracovanie článku zlyhalo.
+2025-04-21 20:59:53,382 - test_components - INFO - Skúšam spracovať článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 20:59:53,383 - article_processor - INFO - Spracovávam článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 20:59:54,573 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 20:59:54,804 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 21:00:03,483 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 21:00:03,487 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 21:00:03,487 - article_processor - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 21:00:03,488 - test_components - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 21:00:03,488 - test_components - INFO - Pôvodný jazyk: cs
+2025-04-21 21:00:03,488 - test_components - INFO - Preložený názov: Medicína
+2025-04-21 21:00:03,488 - test_components - INFO - AI sumár bol vygenerovaný:
+2025-04-21 21:00:03,488 - test_components - INFO - **Sarkastický a virálny sumár:**  
+Takže, Európsky výbor pre výskum a liečbu sklerózy multiplex usporiadal svoj každoročný kongres v Dánsku a kto by to bol povedal, že v Dánsku sa diskutuje o niečom i...
+2025-04-21 21:00:03,488 - test_components - INFO - AI dovetok bol vygenerovaný:
+2025-04-21 21:00:03,488 - test_components - INFO - **  
+Skleróza multiplex je autoimunitné ochorenie, ktoré zasahuje centrálny nervový systém a postihuje približne 2,8 milióna ľudí na celom svete, pričom výskum na kongrese ECTRIMS sa sústredí na nové liečebné prístupy a spôsoby zmiernenia jej symptómov.
+2025-04-21 21:00:03,488 - test_components - INFO - Test modulu article_processor dokončený
+2025-04-21 21:00:03,489 - test_components - INFO - 
+2025-04-21 21:00:03,489 - test_components - INFO - === Test modulu file_manager ===
+2025-04-21 21:00:03,489 - test_components - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 21:00:03,490 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/21-00
+2025-04-21 21:00:03,490 - test_components - INFO - Vytvorený hodinový priečinok: output/2025-04-21/21-00
+2025-04-21 21:00:03,520 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/21-00/2025-04-21_21-00.docx
+2025-04-21 21:00:03,520 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/21-00/2025-04-21_21-00.html
+2025-04-21 21:00:03,520 - test_components - INFO - Vytvorené hodinové súbory: output/2025-04-21/21-00/2025-04-21_21-00.docx, output/2025-04-21/21-00/2025-04-21_21-00.html
+2025-04-21 21:00:03,539 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 21:00:03,539 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/2025-04-21_summary.html
+2025-04-21 21:00:03,540 - test_components - INFO - Vytvorené súhrnné súbory: output/2025-04-21/2025-04-21_summary.docx, output/2025-04-21/2025-04-21_summary.html
+2025-04-21 21:00:03,540 - test_components - INFO - Testujem FTP upload...
+2025-04-21 21:00:04,172 - file_manager - INFO - Súbor output/2025-04-21/21-00/2025-04-21_21-00.docx úspešne nahraný na FTP server.
+2025-04-21 21:00:04,614 - file_manager - INFO - Súbor output/2025-04-21/21-00/2025-04-21_21-00.html úspešne nahraný na FTP server.
+2025-04-21 21:00:04,614 - test_components - INFO - FTP upload výsledky: ['Úspešný', 'Úspešný']
+2025-04-21 21:00:04,615 - test_components - INFO - Test modulu file_manager dokončený
+2025-04-21 21:00:04,615 - test_components - INFO - 
+2025-04-21 21:00:04,615 - test_components - INFO - === Test modulu email_processor ===
+2025-04-21 21:00:04,616 - test_components - INFO - Testujem spracovanie emailov...
+2025-04-21 21:00:05,219 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 21:00:05,286 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 21:00:05,286 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 21:00:05,353 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 21:00:05,353 - test_components - INFO - Spracovaných 0 emailov.
+2025-04-21 21:00:05,353 - test_components - INFO - Testujem získanie URL adries z emailov...
+2025-04-21 21:00:05,640 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 21:00:05,724 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 21:00:05,724 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 21:00:05,790 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 21:00:05,790 - email_processor - INFO - Získaných 0 unikátnych URL adries z e-mailov
+2025-04-21 21:00:05,790 - test_components - INFO - Získaných 0 unikátnych URL adries z emailov.
+2025-04-21 21:00:05,790 - test_components - INFO - Test modulu email_processor dokončený
+2025-04-21 21:00:05,790 - test_components - INFO - 
+2025-04-21 21:00:05,790 - test_components - INFO - Všetky testy dokončené.
+2025-04-21 21:15:17,407 - test_components - INFO - Spúšťam testy komponentov...
+2025-04-21 21:15:17,407 - test_components - INFO - === Test modulu source_relevance ===
+2025-04-21 21:15:17,407 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Tech
+2025-04-21 21:15:17,407 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/tech-technologie-veda-431
+2025-04-21 21:15:17,560 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 387888 bajtov
+2025-04-21 21:15:17,560 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 21:15:20,796 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 21:15:20,801 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 21:15:20,801 - source_relevance - INFO - ✅ Nájdené kľúčové slová (2): věda, srdce
+2025-04-21 21:15:20,801 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 2 kľúčových slov
+2025-04-21 21:15:20,801 - test_components - INFO - Zdroj: Seznam Zprávy Tech
+2025-04-21 21:15:20,801 - test_components - INFO - Relevantný: True
+2025-04-21 21:15:20,801 - test_components - INFO - Nájdené kľúčové slová: věda, srdce
+2025-04-21 21:15:20,801 - test_components - INFO - AI relevancia: False
+2025-04-21 21:15:20,801 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je vo formáte HTML kódu a neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede. Je to len štruktúra webovej stránky bez relevantného obsahu.
+2025-04-21 21:15:20,801 - test_components - INFO - ---
+2025-04-21 21:15:20,801 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Jídlo
+2025-04-21 21:15:20,801 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-jidlo-485
+2025-04-21 21:15:21,222 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 367612 bajtov
+2025-04-21 21:15:21,223 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 21:15:24,387 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 21:15:24,393 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 21:15:24,393 - source_relevance - INFO - ✅ Nájdené kľúčové slová (2): mozek, srdce
+2025-04-21 21:15:24,393 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 2 kľúčových slov
+2025-04-21 21:15:24,393 - source_relevance - INFO - ✅ Zdroj je relevantný podľa AI: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 21:15:24,393 - test_components - INFO - Zdroj: Seznam Zprávy Jídlo
+2025-04-21 21:15:24,393 - test_components - INFO - Relevantný: True
+2025-04-21 21:15:24,393 - test_components - INFO - Nájdené kľúčové slová: mozek, srdce
+2025-04-21 21:15:24,393 - test_components - INFO - AI relevancia: True
+2025-04-21 21:15:24,393 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Článok sa zameriava na gastro scénu, reštaurácie, kaviarne a osobnosti v oblasti jedla, čo nie je priamo relevantné pre zdravotnícke, medicínske alebo vedecké informácie.
+2025-04-21 21:15:24,393 - test_components - INFO - ---
+2025-04-21 21:15:24,393 - source_relevance - INFO - Testujem relevanciu: Seznam Zprávy Životní styl
+2025-04-21 21:15:24,393 - source_relevance - INFO - URL: https://www.seznamzpravy.cz/sekce/magazin-zivotni-styl-195
+2025-04-21 21:15:24,833 - source_relevance - INFO - Veľkosť stiahnutého obsahu: 363301 bajtov
+2025-04-21 21:15:24,834 - source_relevance - INFO - Hľadám kľúčové slová...
+2025-04-21 21:15:27,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 21:15:27,693 - source_relevance - INFO - AI relevancia: NIE
+
+Dôvod: Obsah článku je technický a týka sa štruktúry webovej stránky, konkrétne sekcie "Životní styl" na Seznam Zprávy. Neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede.
+2025-04-21 21:15:27,694 - source_relevance - INFO - ✅ Nájdené kľúčové slová (1): srdce
+2025-04-21 21:15:27,694 - source_relevance - INFO - ✅ Zdroj je relevantný - nájdených 1 kľúčových slov
+2025-04-21 21:15:27,694 - test_components - INFO - Zdroj: Seznam Zprávy Životní styl
+2025-04-21 21:15:27,694 - test_components - INFO - Relevantný: True
+2025-04-21 21:15:27,694 - test_components - INFO - Nájdené kľúčové slová: srdce
+2025-04-21 21:15:27,695 - test_components - INFO - AI relevancia: False
+2025-04-21 21:15:27,695 - test_components - INFO - AI dôvod: NIE
+
+Dôvod: Obsah článku je technický a týka sa štruktúry webovej stránky, konkrétne sekcie "Životní styl" na Seznam Zprávy. Neobsahuje žiadne konkrétne informácie o zdraví, medicíne alebo vede.
+2025-04-21 21:15:27,695 - test_components - INFO - ---
+2025-04-21 21:15:27,695 - test_components - INFO - Test modulu source_relevance dokončený
+2025-04-21 21:15:27,695 - test_components - INFO - 
+2025-04-21 21:15:27,695 - test_components - INFO - === Test modulu article_processor ===
+2025-04-21 21:15:27,695 - test_components - INFO - Skúšam spracovať článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 21:15:27,695 - article_processor - INFO - Spracovávam článok: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 21:15:28,713 - article_processor - ERROR - Chyba pri sťahovaní článku z https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/: Article `download()` failed with 404 Client Error: Not Found for url: https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/ on URL https://www.zdravezpravy.cz/2023/05/01/vedci-objevili-novy-zpusob-jak-lepe-diagnostikovat-rakovinu/
+2025-04-21 21:15:28,713 - test_components - WARNING - Spracovanie článku zlyhalo.
+2025-04-21 21:15:28,714 - test_components - INFO - Skúšam spracovať článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 21:15:28,714 - article_processor - INFO - Spracovávam článok: https://www.tribune.cz/medicina/dlouhodobe-uzivani-nsaid-zvysuje-riziko-srdecniho-selhani
+2025-04-21 21:15:29,670 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 21:15:29,892 - article_processor - INFO - Text preložený pomocou DeepL API
+2025-04-21 21:15:38,107 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-21 21:15:38,110 - article_processor - INFO - Štylizovaný súhrn vygenerovaný pomocou OpenAI primárneho API
+2025-04-21 21:15:38,110 - article_processor - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 21:15:38,111 - test_components - INFO - Článok úspešne spracovaný: Medicína
+2025-04-21 21:15:38,112 - test_components - INFO - Pôvodný jazyk: cs
+2025-04-21 21:15:38,112 - test_components - INFO - Preložený názov: Medicína
+2025-04-21 21:15:38,112 - test_components - INFO - AI sumár bol vygenerovaný:
+2025-04-21 21:15:38,112 - test_components - INFO - **Sarkastický a virálny sumár:**
+
+Vitajte v nádhernom svete medicíny, kde skleróza multiplex neznamená len zábavné večierky s pamäťovými hrami! Na kongrese ECTRIMS 2024 v Dánsku sa vedci zišli, aby ná...
+2025-04-21 21:15:38,112 - test_components - INFO - AI dovetok bol vygenerovaný:
+2025-04-21 21:15:38,112 - test_components - INFO - **
+
+Skleróza multiplex je autoimunitné ochorenie, ktoré postihuje centrálnu nervovú sústavu a spôsobuje problémy s pohybom, rovnováhou a koordináciou. Aktuálne sa vyvíja množstvo nových liečebných metód, ktoré by mohli zlepšiť kvalitu života pacientov.
+2025-04-21 21:15:38,112 - test_components - INFO - Test modulu article_processor dokončený
+2025-04-21 21:15:38,112 - test_components - INFO - 
+2025-04-21 21:15:38,112 - test_components - INFO - === Test modulu file_manager ===
+2025-04-21 21:15:38,112 - test_components - INFO - Vytvorený denný priečinok: output/2025-04-21
+2025-04-21 21:15:38,113 - file_manager - INFO - Vytvorený hodinový priečinok: output/2025-04-21/21-15
+2025-04-21 21:15:38,113 - test_components - INFO - Vytvorený hodinový priečinok: output/2025-04-21/21-15
+2025-04-21 21:15:38,142 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/21-15/2025-04-21_21-15.docx
+2025-04-21 21:15:38,142 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/21-15/2025-04-21_21-15.html
+2025-04-21 21:15:38,142 - test_components - INFO - Vytvorené hodinové súbory: output/2025-04-21/21-15/2025-04-21_21-15.docx, output/2025-04-21/21-15/2025-04-21_21-15.html
+2025-04-21 21:15:38,160 - file_manager - INFO - Vytvorený DOCX súbor: output/2025-04-21/2025-04-21_summary.docx
+2025-04-21 21:15:38,161 - file_manager - INFO - Vytvorený HTML súbor: output/2025-04-21/2025-04-21_summary.html
+2025-04-21 21:15:38,161 - test_components - INFO - Vytvorené súhrnné súbory: output/2025-04-21/2025-04-21_summary.docx, output/2025-04-21/2025-04-21_summary.html
+2025-04-21 21:15:38,161 - test_components - INFO - Testujem FTP upload...
+2025-04-21 21:15:38,539 - file_manager - INFO - Súbor output/2025-04-21/21-15/2025-04-21_21-15.docx úspešne nahraný na FTP server.
+2025-04-21 21:15:39,007 - file_manager - INFO - Súbor output/2025-04-21/21-15/2025-04-21_21-15.html úspešne nahraný na FTP server.
+2025-04-21 21:15:39,008 - test_components - INFO - FTP upload výsledky: ['Úspešný', 'Úspešný']
+2025-04-21 21:15:39,009 - test_components - INFO - Test modulu file_manager dokončený
+2025-04-21 21:15:39,009 - test_components - INFO - 
+2025-04-21 21:15:39,009 - test_components - INFO - === Test modulu email_processor ===
+2025-04-21 21:15:39,010 - test_components - INFO - Testujem spracovanie emailov...
+2025-04-21 21:15:39,742 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 21:15:39,845 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 21:15:39,845 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 21:15:39,958 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 21:15:39,958 - test_components - INFO - Spracovaných 0 emailov.
+2025-04-21 21:15:39,958 - test_components - INFO - Testujem získanie URL adries z emailov...
+2025-04-21 21:15:40,342 - email_processor - INFO - Úspešné pripojenie k e-mailovej schránke ighi@ighishomeradio.eu
+2025-04-21 21:15:40,456 - email_processor - ERROR - Chyba pri vytváraní priečinka Processed: NO
+2025-04-21 21:15:40,456 - email_processor - ERROR - Chyba pri zabezpečovaní priečinka pre spracované e-maily.
+2025-04-21 21:15:40,566 - email_processor - INFO - Spojenie s e-mailovou schránkou úspešne ukončené
+2025-04-21 21:15:40,567 - email_processor - INFO - Získaných 0 unikátnych URL adries z e-mailov
+2025-04-21 21:15:40,567 - test_components - INFO - Získaných 0 unikátnych URL adries z emailov.
+2025-04-21 21:15:40,567 - test_components - INFO - Test modulu email_processor dokončený
+2025-04-21 21:15:40,567 - test_components - INFO - 
+2025-04-21 21:15:40,567 - test_components - INFO - Všetky testy dokončené.
